@@ -4,13 +4,13 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
+    <main>
       <Header/>
       <main>
         <Home/>
       </main>
       <Footer/>
-    </>
+    </main>
   )
 }
 

@@ -5,7 +5,7 @@
 
 @layer utilities {
     .animate-spin-custom{
-        animation: spin 7s linear infinite;
+        animation: spin 10s linear infinite;
     }
 }
 
