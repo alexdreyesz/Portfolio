@@ -1,14 +1,17 @@
 import Header from './components/Header'
-import Home from './components/Home'
+import Home from './components/sections/home/Home'
 import Footer from './components/Footer'
+import CanvasBackground from "./components/common/background/CanvasBackground";
+
 
 function App() {
   return (
-    <main>
+    <main className=" overflow-hidden">
+      <CanvasBackground/>
       <Header/>
-      <main>
+      <div>
         <Home/>
-      </main>
+      </div>
       <Footer/>
     </main>
   )
