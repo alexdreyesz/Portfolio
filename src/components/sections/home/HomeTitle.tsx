@@ -3,10 +3,10 @@ import { words } from '../../../constants/index'
 
 function Home() {
     return (
-        <div className="flex-col text-center items-center">
+        <div className="flex-col text-center items-center pt-6">
             
-            <div className="h-10 text-center items-center overflow-hidden">
-                <p className="relative font-bold text-3xl text-white">
+            <div className="w-full h-8 items-center justify-center text-center overflow-hidden">
+                <p className="relative bottom-[5px] font-bold text-3xl text-white">
                     Welcome To My Potfolio! 
                     
                     Made With &nbsp;
@@ -25,7 +25,7 @@ function Home() {
                 </p>
             </div>
 
-            <div className="font-bold text-3xl text-white">
+            <div className="font-bold text-3xl text-white pt-5">
                 <Typewriter
                     options={{
                         strings: ['Hello My Name Is Alex D. Reyes 😃', 'I will Be King Of The Software Engineers 👒'],
