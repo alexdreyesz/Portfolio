@@ -1,30 +1,29 @@
 import Typewriter from 'typewriter-effect'
+import { words } from '../../../constants/index'
 
 function Home() {
-    const words = [
-        {text: "React", imgPath: "src/assets/icons/react.png"},
-        {text: "Tailwind", imgPath: "src/assets/icons/tailwind.png"},
-        {text: "Threejs", imgPath: "src/assets/icons/threejs.png"},
-        {text: "GSAP", imgPath: "src/assets/icons/gsap.png"},
-    ];
-
     return (
         <div className="flex-col text-center items-center">
-            <p className="relative font-bold text-3xl text-white">
-                Welcome To My Potfolio! 
-                
-                Made With 
-                <span className="slide">
-                    <span className="wrapper flex-col">
-                        {words.map((word) => (
-                            <span key={word.text} className="text-white flex">
-                                <img src={word.imgPath} className=" h-6 invert" alt={word.text}>
-                                </img>
-                            </span>
-                        ))}
+            
+            <div className="h-10 text-center items-center overflow-hidden">
+                <p className="relative font-bold text-3xl text-white">
+                    Welcome To My Potfolio! 
+                    
+                    Made With &nbsp;
+                    <span className="slide">
+                        <span className="wrapper">
+                            {words.map((word) => (
+                                <span key={word.text} className="flex items-center gap-2 pb-2">
+                                    <img src={word.imgPath} className="h-6 invert" alt={word.text}>
+                                    </img>
+
+                                    <span>{word.text}</span>
+                                </span>
+                            ))}
+                        </span>
                     </span>
-                </span>
-            </p>
+                </p>
+            </div>
 
             <div className="font-bold text-3xl text-white">
                 <Typewriter

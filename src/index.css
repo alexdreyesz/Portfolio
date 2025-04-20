@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
 /* Tailwind utilities */
@@ -21,6 +22,66 @@
     .animate-borderline:hover::after {
         width: 100%;
     }
+}
+
+@layer components {
+
+.hero-text {
+    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
+    img {
+        @apply size-8 md:size-10 object-contain;
+    }
+}
+
+/* Hero text slider starts */
+.slide {
+    display: inline-block;
+    flex-direction: column;
+    transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+}
+  
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+}
+
+@keyframes wordSlider {
+    0% {
+        transform: translateY(0.5%);
+    }
+    12.5% {
+        transform: translateY(-12.5%);
+    }
+    25% {
+        transform: translateY(-25%);
+    }
+    37.5% {
+        transform: translateY(-37.5%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    62.5% {
+        transform: translateY(-62.5%);
+    }
+    75% {
+        transform: translateY(-75%);
+    }
+    87.5% {
+        transform: translateY(-87.5%);
+    }
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(110%, 110%);
+}
+  
+  /* Hero Text slider ends */  
 }
 
 :root {

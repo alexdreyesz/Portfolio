@@ -1,4 +1,5 @@
 import logo from '../assets/icons/kingz_logo.png'
+import PlayMusic from '../components/common/PlayMusic'
 
 // Header For Porfolio Website 
 function Header() {
@@ -14,6 +15,7 @@ function Header() {
                 <a className="cursor-pointer"><p className="hover:scale-110">About</p></a>
                 <a className="cursor-pointer"><p className="hover:scale-110">Career</p></a>
                 <a className="cursor-pointer"><p className="hover:scale-110">Projects</p></a>
+                <PlayMusic/>
             </nav>   
         </header>
 
