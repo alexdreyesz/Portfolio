@@ -38,12 +38,13 @@ export default function SunnyBoat() {
             <directionalLight position={[5, 5, 5]} intensity={5}/>
             <directionalLight position={[-5, 5, -5]} intensity={5} />
            
-
+            {/*
             <OrbitControls 
                 enablePan={false} 
                 minDistance={5} 
                 maxDistance={20}
             />
+            */}
 
             <Model/>
 

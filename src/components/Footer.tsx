@@ -2,7 +2,8 @@ import github from '../assets/icons/github.png'
 import linkedin from '../assets/icons/linkedin.png'
 import resume from '../assets/icons/resume.png'
 import resumePdf from '../assets/documents/AlexReyes_Resume.pdf'
-import PlayAudio from './common/background/playAudio'
+
+import PlayAudio from './common/audio/playAudio'
 
 import bonk from '../assets/sound/bonk.mp3'
 import frog from '../assets/sound/frog-laughing.mp3'
