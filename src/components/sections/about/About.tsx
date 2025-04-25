@@ -1,8 +1,5 @@
+import {languages, frameworks, libraries, developmentTools, designTools, databases, AILLM, professional} from "../../../constants/index"
 import portrait from '/src/assets/images/portrait-casual.png'
-
-import react from '../../../assets/icons/badges/frameworks/react.png'
-
-import blender from '../../../assets/icons/badges/design-tools/blender.svg'
 
 export default function About() {
     return(
@@ -18,43 +15,73 @@ export default function About() {
 
             <div className="w-250 h-fit mt-5 text-2xl text-white">
                 <p>Languages:</p>
-                <div className="flex pt-2">
-                    <img className="h-12" src={react}/>
+                <div className="flex pt-2 gap-2">
+                    {languages.map((language) => (
+                        <img className="h-12 animation-rotate-y" src={language.iconPath}/>
+                    ))}
                 </div>
             </div>
 
             <div className="w-250 h-fit mt-5 text-2xl text-white">
                 <p>FrameWorks:</p>
                 <div className="flex pt-2">
-                    <img className="h-12" src={react}/>
+                    {frameworks.map((framework) => (
+                        <img className="h-12" src={framework.iconPath}/>
+                    ))}
                 </div>
             </div>
 
             <div className="w-250 h-fit mt-5 text-2xl text-white">
                 <p>Libraries:</p>
                 <div className="flex pt-2">
-                    <img className="h-12" src={react}/>
+                    {libraries.map((library) => (
+                        <img className="h-12" src={library.iconPath}/>
+                    ))}
                 </div>
             </div>
 
             <div className="w-250 h-fit mt-5 text-2xl text-white">
                 <p>Development Tools:</p>
                 <div className="flex pt-2">
-                    <img className="h-12" src={react}/>
+                    {developmentTools.map((tool) => (
+                        <img className="h-12" src={tool.iconPath}/>
+                    ))}
                 </div>
             </div>
 
             <div className="w-250 h-fit mt-5 text-2xl text-white">
-                <p>Design Tools</p>
+                <p>Design Tools:</p>
                 <div className="flex pt-2">
-                    <img className="h-12" src={blender}/>
+                    {designTools.map((tool) => (
+                        <img className="h-12" src={tool.iconPath}/>
+                    ))}
                 </div>
             </div>
 
             <div className="w-250 h-fit mt-5 text-2xl text-white">
-                <p>AI & LLMs</p>
+                <p>Databases:</p>
                 <div className="flex pt-2">
-                    <img className="h-12" src={react}/>
+                    {databases.map((database) => (
+                        <img className="h-12" src={database.iconPath}/>
+                    ))}
+                </div>
+            </div>
+
+            <div className="w-250 h-fit mt-5 text-2xl text-white">
+                <p>AI & LLMs:</p>
+                <div className="flex pt-2">
+                    {AILLM.map((ai) => (
+                        <img className="h-12" src={ai.iconPath}/>
+                    ))}
+                </div>
+            </div>
+
+            <div className="w-250 h-fit mt-5 text-2xl text-white">
+                <p>Professional:</p>
+                <div className="flex pt-2">
+                    {professional.map((tool) => (
+                        <img className="h-12" src={tool.iconPath}/>
+                    ))}
                 </div>
             </div>
         </div>
