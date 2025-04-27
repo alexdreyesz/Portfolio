@@ -6,7 +6,7 @@ function Home() {
         <section id="home" className="h-screen relative overflow-hidden">
             <Title/>
 
-            <Sunny/>
+            {/*<Sunny/>*/}
         </section>
     )
 }

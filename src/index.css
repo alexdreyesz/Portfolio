@@ -57,6 +57,7 @@
     }
     /* Hero Text slider ends */  
 
+    /* Rotate Animation Y Axis */
     .animation-rotate-y:hover {
         cursor: pointer;
         animation: rotateY 5s infinite linear;
@@ -69,6 +70,24 @@
         75% { transform: scale(1.2) rotateY(270deg); }
         100% { transform: scale(1.2) rotateY(360deg); }
     }  
+    /* Rotate Animation Y Axis */
+
+    /* Glass Backgorund */
+    .glass-background { 
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    /* Rotate Animation Y Axis */
+
+    /* Animated Border Lights */
+    .animation-border-lights {
+        position: relative;
+        transform: translate(-0.3%, -99.2%);
+        border: 2px solid red;
+        border-radius: 16px;
+    }
+    /* Animated Border Lights */
 }
 
 .button {
