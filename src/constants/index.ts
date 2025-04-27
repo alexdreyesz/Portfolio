@@ -116,3 +116,40 @@ export const professional = [
     {text: "Notion", iconPath: "src/assets/icons/badges/professional/notion.svg"},
     {text: "Stackoverflow", iconPath: "src/assets/icons/badges/professional/stackoverflow.svg"},
 ];
+
+/* Constants For Career Section */
+
+export const cards = {
+    hillsborough: {
+        imgUrl: "src/assets/icons/logo/hillsborough.png",
+        date: "January 2019 - May 2021",
+        title: "A.A. in Computer Science",
+        location: "Tampa, Florida",
+        description: "Completed an Associate of Arts (A.A.) degree with a focus in Computer Science at Hillsborough Community College in Tampa, Florida. Gained a strong foundation in programming, mathematics, and problem-solving, preparing for further studies and a career in technology.",
+    },
+
+    xime: {
+        imgUrl: "src/assets/icons/logo/xime.png",
+        date: "November 2019 - August 2022",
+        title: "Full Stack Developer",
+        location: "Los Angeles, California",
+        description: "Designed, developed, and deployed LAMP stack websites, managed product databases, and automated wholesale catalog creation. Led the migration of company websites to Shopify and integrated QuickBooks for automated financial tracking, improving operational efficiency and supporting e-commerce growth.",
+    },
+    
+    ucf: {
+      imgUrl: "src/assets/icons/logo/ucf.png",
+      date: "August 2022 - December 2025",
+      title: "B.S. in Computer Science",
+      location: "Orlando, Florida",
+      description: "Currently pursuing a Bachelor of Science (B.S.) degree in Computer Science at the University of Central Florida (UCF). Building advanced knowledge in software development, algorithms, data structures, and systems programming while preparing for a career in the technology industry.",
+    },
+    
+    spaceForce: {
+      imgUrl: "src/assets/icons/logo/ussf.png",
+      date: "January 2025 - Present",
+      title: "Full Stack Developer",
+      location: "Orlando, Florida",
+      description: "Developing an AI-powered IT solution that leverages technologies like OpenAI, Azure SQL, ServiceNow, and Archibus to streamline IT operations, reduce ticket volume, and enhance user productivity through intelligent, self-service support.",
+    }
+};
+  
