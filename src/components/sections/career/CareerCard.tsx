@@ -7,14 +7,14 @@ interface CareerCardProps {
     size: string;
 }
 
-export default function CareerCards({imgUrl, date, title, location, description, size}: CareerCardProps) {
+export default function CareerCard({imgUrl, date, title, location, description, size}: CareerCardProps) {
     return (
         <div className="h-fit w-150 rounded-2xl border-1 border-gray-800 glass-background">
-            <div className="relative left-1.5 grid grid-rows-2 text-white content-center items-center">
+            <div className="relative left-1.5 bottom-0.5 grid grid-rows-2 text-white content-center items-center">
                 
-                <div className="mt-5 flex">
+                <div className="mt-3 flex">
                     <div className="h-30 w-30 ml-2 mr-4 flex justify-center items-center content-center">
-                        <img src={imgUrl} className={`${size} w-auto`}/>
+                        <img src={imgUrl} className={`${size} w-auto animation-rotate-y`}/>
                     </div>
 
                     <div className="w-fit flex-col justify-center items-center content-center">

@@ -122,6 +122,11 @@ html, body {
     font-family: tomorrow;
 }
 
+p {
+    cursor: default;
+    user-select: none;
+}
+
 /* Smooth All Transitions Globally */
 * {
     transition: all 0.2s ease-in-out;

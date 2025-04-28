@@ -16,15 +16,15 @@ function Footer() {
             <div className="relative left-8 flex text-white">Thank you for visiting!! <PlayAudio source={frog}><p className="hover:scale-120 hover:animate-ping cursor-pointer">&nbsp;:D</p></PlayAudio></div>
 
             <div className="relative right-1 flex space-x-12">
-                <a href="https://github.com/alexdreyesz">
+                <a href="https://github.com/alexdreyesz" target="_blank" rel="noopener noreferrer">
                     <img src={github} className="h-8 w-auto hover:scale-120 invert" alt="Github Link"/>
                 </a>
 
-                <a href="https://www.linkedin.com/in/alexdreyesz/">
+                <a href="https://www.linkedin.com/in/alexdreyesz/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedin} className="h-8 w-auto hover:scale-120 invert" alt="LinkedIn Link"/>
                 </a>
 
-                <a href={resumePdf}>
+                <a href={resumePdf} target="_blank" rel="noopener noreferrer">
                     <img src={resume} className="h-8 w-auto hover:scale-120 invert" alt="Resume Link"/>
                 </a>
             </div>

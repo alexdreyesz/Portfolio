@@ -1,12 +1,17 @@
 import { cards } from "../../../constants/index"
-import CareerCards from "./CareerCard"
+import CareerCard from "./CareerCard"
 
 export default function Career() {
     return (
-        <div id="career" className="h-fit border-2 border-amber-700 scroll-mt-12">
+        <div id="career" className="h-fit border-2 scroll-mt-12">
+
+            <div className="h-22 w-auto pt-20 pb-30 flex-col justify-center text-center items-center content-center text-white">
+                <p className="text-4xl pb-5">Career</p>
+                <p className="w-[80%] text-2xl mx-auto text-center">Here are some of the most important milestones in my career. I have been fortunate to have had to work with some amazing companies and teams</p>
+            </div>
             
             <div className="pt-20 pl-20">
-                <CareerCards
+                <CareerCard
                     imgUrl={cards.hillsborough.imgUrl}
                     date={cards.hillsborough.date}
                     title={cards.hillsborough.title}
@@ -16,8 +21,8 @@ export default function Career() {
                 />
             </div>
 
-            <div className="pt-20 pl-20">
-                <CareerCards
+            <div className="pt-20 pr-20 flex justify-end">
+                <CareerCard
                     imgUrl={cards.xime.imgUrl}
                     date={cards.xime.date}
                     title={cards.xime.title}
@@ -28,7 +33,7 @@ export default function Career() {
             </div>
 
             <div className="pt-20 pl-20">
-                <CareerCards
+                <CareerCard
                     imgUrl={cards.ucf.imgUrl}
                     date={cards.ucf.date}
                     title={cards.ucf.title}
@@ -38,8 +43,8 @@ export default function Career() {
                 />
             </div>
 
-            <div className="pt-20 pl-20">
-                <CareerCards
+            <div className="pt-20 pr-20 flex justify-end">
+                <CareerCard
                     imgUrl={cards.spaceForce.imgUrl}
                     date={cards.spaceForce.date}
                     title={cards.spaceForce.title}

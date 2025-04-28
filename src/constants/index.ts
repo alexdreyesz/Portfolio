@@ -132,7 +132,7 @@ export const cards = {
     },
 
     xime: {
-        imgUrl: logoIcons['../assets/icons/logo/xime.png'] as string ,
+        imgUrl: logoIcons['../assets/icons/logo/xime.png'] as string,
         date: "November 2019 - August 2022",
         title: "Full Stack Developer",
         location: "Los Angeles, California",
@@ -140,7 +140,7 @@ export const cards = {
     },
     
     ucf: {
-      imgUrl: logoIcons['../assets/icons/logo/ucf.png'] as string ,
+      imgUrl: logoIcons['../assets/icons/logo/ucf.png'] as string,
       date: "August 2022 - December 2025",
       title: "B.S. in Computer Science",
       location: "Orlando, Florida",
@@ -148,7 +148,7 @@ export const cards = {
     },
     
     spaceForce: {
-      imgUrl: logoIcons['../assets/icons/logo/ussf.png'] as string ,
+      imgUrl: logoIcons['../assets/icons/logo/ussf.png'] as string,
       date: "January 2025 - Present",
       title: "Full Stack Developer",
       location: "Orlando, Florida",
@@ -158,5 +158,88 @@ export const cards = {
 
 /* Constants For Projects Section */
 export const projects = {
-    
+    contactHub: {
+        imgUrl: logoIcons['../assets/icons/logo/contacthub.png'] as string,
+        link: "https://github.com/alexdreyesz/ContactHub",
+        title: "ContactHub",
+        date: "Jan 2025 - Mar 2025",
+        description: "ContactHub is a complete contact management system built with the LAMP stack (Linux, Apache, MySQL, PHP). It offers secure user authentication, easy-to-use CRUD operations, and powerful search and filtering features. With automated database backups and a fully responsive front-end, it ensures data integrity while delivering a smooth and efficient user experience.",
+        technologies: [
+            {text: "HTML", badgeUrl: badgeIcons['../assets/icons/badges/languages/html5.svg'] as string},
+            {text: "CSS", badgeUrl: badgeIcons['../assets/icons/badges/languages/css3.svg'] as string},
+            {text: "JavaScript", badgeUrl: badgeIcons['../assets/icons/badges/languages/javascript.svg'] as string},
+            {text: "MariaDB", badgeUrl: badgeIcons['../assets/icons/badges/databases/mariadb.svg'] as string},
+            {text: "Linux", badgeUrl: badgeIcons['../assets/icons/badges/development-tools/linux.svg'] as string},
+            {text: "Apache", badgeUrl: badgeIcons['../assets/icons/badges/databases/apache.svg'] as string},
+            {text: "MySQL", badgeUrl: badgeIcons['../assets/icons/badges/languages/mysql.svg'] as string},
+            {text: "PHP", badgeUrl: badgeIcons['../assets/icons/badges/languages/php.svg'] as string},
+        ]
+    },
+
+    ucfGuessr: {
+        imgUrl: logoIcons['../assets/icons/logo/ucf-pegasus.png'] as string,
+        link: "https://github.com/EvanPartidas/UCF-Map",
+        title: "UCFMAP",
+        date: "Mar 2025 - Apr 2025",
+        description: "A dynamic and responsive UCF themed GeoGuesser game built with HTML, CSS, TypeScript, React, and the Leaflet map API. Players are challenged to guess locations around the UCF campus using interactive maps and intuitive navigation. Designed with a focus on performance, smooth user interaction, and a clean, modern interface.",
+        technologies: [
+            {text: "HTML", badgeUrl: badgeIcons['../assets/icons/badges/languages/html5.svg'] as string},
+            {text: "CSS", badgeUrl: badgeIcons['../assets/icons/badges/languages/css3.svg'] as string},
+            {text: "TypeScript", badgeUrl: badgeIcons['../assets/icons/badges/languages/typescript.svg'] as string},
+            {text: "React", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/react.svg'] as string},
+            {text: "leaflet", badgeUrl: badgeIcons['../assets/icons/badges/apis/leaflet.png'] as string},
+        ]
+    },
+
+    portfolio: {
+        imgUrl: logoIcons['../assets/icons/logo/kingz.png'] as string,
+        link: "https://github.com/alexdreyesz/Portfolio",
+        title: "Portfolio",
+        date: "April 2025",
+        description: "An interactive personal portfolio crafted with React, Tailwind CSS, Three.js, and GSAP. It highlights my projects, technical skills, and experience through responsive design, smooth animations, and 3D visuals to create an engaging and dynamic user experience. Built with modern design principles, and accessibility to ensure a seamless experience across all devices.",
+        technologies: [
+            {text: "HTML", badgeUrl: badgeIcons['../assets/icons/badges/languages/html5.svg'] as string},
+            {text: "CSS", badgeUrl: badgeIcons['../assets/icons/badges/languages/css3.svg'] as string},
+            {text: "TypeScript", badgeUrl: badgeIcons['../assets/icons/badges/languages/typescript.svg'] as string},
+            {text: "React", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/react.svg'] as string},
+            {text: "Tailwind", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/tailwindcss.svg'] as string},
+            {text: "ThreeJS", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/threejs.svg'] as string},
+            {text: "GSAP", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/gsap1.png'] as string},
+        ]
+    },
+
+    codelaboration: {
+        imgUrl: logoIcons['../assets/icons/logo/codelaboration.svg'] as string,
+        link: "https://github.com/alexdreyesz/Codelaboration",
+        title: "Codelab",
+        date: "Oct 2024 - Present",
+        description: "Codelaboration is an interactive coding presentation platform built with MongoDB, Express, React, and Node.js. It allows presenters to showcase code live, line by line, with a real-time dynamic editor for live editing and display. Designed to create an engaging and collaborative coding experience for audiences and presenters alike. Still a work in progress.",
+        technologies: [
+            {text: "HTML", badgeUrl: badgeIcons['../assets/icons/badges/languages/html5.svg'] as string},
+            {text: "CSS", badgeUrl: badgeIcons['../assets/icons/badges/languages/css3.svg'] as string},
+            {text: "TypeScript", badgeUrl: badgeIcons['../assets/icons/badges/languages/typescript.svg'] as string},
+            {text: "Tailwind", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/tailwindcss.svg'] as string},
+            {text: "MongoDB", badgeUrl: badgeIcons['../assets/icons/badges/databases/mongodb.svg'] as string},
+            {text: "ExpressJs", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/express.svg'] as string},
+            {text: "React", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/react.svg'] as string},
+            {text: "NodeJs", badgeUrl: badgeIcons['../assets/icons/badges/development-tools/nodejs.svg'] as string},
+        ]
+    },
+
+    askPolaris: {
+        imgUrl: logoIcons['../assets/icons/logo/askorb.png'] as string,
+        link: "https://github.com/alexdreyesz",
+        title: "AskPolaris",
+        date: "Jan 2025 - Present",
+        description: "Developing an AI-powered IT solution in collaboration with the U.S. Space Force, designed to adapt to user input and technical skill levels. Integrating technologies like OpenAI, Azure SQL Database, ServiceNow, and Archibus to deliver intelligent support, reduce IT ticket volume, and boost overall efficiency by empowering users to resolve common issues independently.",
+        technologies: [
+            {text: "HTML", badgeUrl: badgeIcons['../assets/icons/badges/languages/html5.svg'] as string},
+            {text: "CSS", badgeUrl: badgeIcons['../assets/icons/badges/languages/css3.svg'] as string},
+            {text: "TypeScript", badgeUrl: badgeIcons['../assets/icons/badges/languages/typescript.svg'] as string},
+            {text: "React", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/react.svg'] as string},
+            {text: "AzureSQLDatabse", badgeUrl: badgeIcons['../assets/icons/badges/databases/azuresqldatabase.svg'] as string},
+            {text: "Flask", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/flask.svg'] as string},
+            {text: "Chatgpt", badgeUrl: badgeIcons['../assets/icons/badges/ai-llm/chatgpt.svg'] as string},
+        ]
+    }, 
 };

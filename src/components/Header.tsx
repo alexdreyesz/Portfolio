@@ -1,11 +1,11 @@
-import logo from '../assets/icons/kingz_logo.png'
+import logo from '../assets/icons/logo/kingz.png'
 import PlayMusic from './common/audio/PlayMusic'
 
 // Header For Porfolio Website 
 function Header() {
     return(
         // Header Container 
-        <header className="h-12 sticky z-1 inset-x-0 top-0 bg-blue-100/70 flex justify-between items-center">
+        <header className="h-12 fixed z-50 inset-x-0 top-0 bg-blue-100/70 flex justify-between items-center">
             <a href="#home">
                 <img src={logo} className="relative left-6 h-12 w-auto hover:scale-120 animate-spin-custom" alt="Kingz Logo"/>
             </a>
