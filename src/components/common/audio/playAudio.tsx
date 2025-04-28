@@ -1,10 +1,12 @@
 import React, { useRef } from 'react'
 
 export default function PlaySound({ source, children }: { source: string; children: React.ReactNode }) {
-    const audioRef = useRef(null);
+    const audioRef = useRef<HTMLAudioElement>(null);
 
     function toggleSound() {
-        audioRef.current.play();
+        if(audioRef.current) {
+            audioRef.current.play();
+        }
     };
 
     return(

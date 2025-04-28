@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState} from "react"
+import { useRef, useState} from "react"
 import playIcon from "../../../assets/icons/play.png"
 import pauseIcon from "../../../assets/icons/pause.png"
 import music from "../../../assets/music/Moonlighter-Tired-Rynoka.mp3" 
@@ -12,11 +12,15 @@ export default function PlayMusic() {
         if(isPlaying == false) {
             setIsPlaying(true);
             setToggleIcon(playIcon);
-            audioRef.current.play();
+            if (audioRef.current) {
+                audioRef.current.play();
+            }
         } else {
             setIsPlaying(false);
             setToggleIcon(pauseIcon);
-            audioRef.current.pause();
+            if (audioRef.current) {
+                audioRef.current.pause();
+            }
         }
     }
 

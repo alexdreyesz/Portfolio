@@ -4,12 +4,12 @@ import About from './components/sections/about/About'
 import Career from './components/sections/career/Career'
 import Projects from './components/sections/projects/Projects'
 import Footer from './components/Footer'
-import CanvasBackground from "./components/common/background/CanvasBackground";
+//import CanvasBackground from "./components/common/background/CanvasBackground";
 
 
 function App() {
   return (
-    <div className="bg-black">
+    <div>
       {/*<CanvasBackground/>*/}
       <Header/>
       <main className="overflow-hidden">

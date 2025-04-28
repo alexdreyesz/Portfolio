@@ -1,5 +1,5 @@
 import Title from "./HomeTitle"
-import Sunny from "../../common/3d-models/Sunny"
+//import Sunny from "../../common/3d-models/Sunny"
 
 function Home() {
     return (

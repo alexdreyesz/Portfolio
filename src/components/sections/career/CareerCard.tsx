@@ -1,4 +1,12 @@
-export default function CareerCards({imgUrl, date, title, location, description}) {
+interface CareerCardProps {
+    imgUrl: string;
+    date: string;
+    title: string;
+    location: string;
+    description: string;
+}
+
+export default function CareerCards({imgUrl, date, title, location, description}: CareerCardProps) {
     return (
         <div className="h-fit w-150 rounded-2xl border-1 border-gray-800 glass-background">
             <div className="grid grid-rows-2 text-white content-center items-center">
