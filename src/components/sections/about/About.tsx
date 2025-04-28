@@ -1,5 +1,5 @@
 import {languages, frameworks, libraries, developmentTools, designTools, databases, AILLM, professional} from "../../../constants/index"
-import { getAssetPath } from '../../../utils/getAssetPath'
+import { getAssetPathSRC } from '../../../utils/getAssetPathSRC'
 import portrait from '/src/assets/images/portrait-casual.png'
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
                 <p>Languages:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {languages.map((language) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(language.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(language.iconPath)}/>
                     ))}
                 </div>
             </div>
@@ -27,7 +27,7 @@ export default function About() {
                 <p>FrameWorks:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {frameworks.map((framework) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(framework.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(framework.iconPath)}/>
                     ))}
                 </div>
             </div>
@@ -36,7 +36,7 @@ export default function About() {
                 <p>Libraries:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {libraries.map((library) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(library.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(library.iconPath)}/>
                     ))}
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function About() {
                 <p>Development Tools:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {developmentTools.map((tool) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(tool.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(tool.iconPath)}/>
                     ))}
                 </div>
             </div>
@@ -54,7 +54,7 @@ export default function About() {
                 <p>Design Tools:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {designTools.map((tool) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(tool.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(tool.iconPath)}/>
                     ))}
                 </div>
             </div>
@@ -63,7 +63,7 @@ export default function About() {
                 <p>Databases:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {databases.map((database) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(database.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(database.iconPath)}/>
                     ))}
                 </div>
             </div>
@@ -72,7 +72,7 @@ export default function About() {
                 <p>AI & LLMs:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {AILLM.map((ai) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(ai.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(ai.iconPath)}/>
                     ))}
                 </div>
             </div>
@@ -81,7 +81,7 @@ export default function About() {
                 <p>Professional:</p>
                 <div className="flex flex-wrap flex-row pt-2 gap-2">
                     {professional.map((tool) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPath(tool.iconPath)}/>
+                        <img className="h-14 animation-rotate-y mt-2" src={getAssetPathSRC(tool.iconPath)}/>
                     ))}
                 </div>
             </div>

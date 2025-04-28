@@ -5,7 +5,7 @@ import PlayMusic from './common/audio/PlayMusic'
 function Header() {
     return(
         // Header Container 
-        <header className="sticky z-1 inset-x-0 top-0 bg-blue-100/70 flex justify-between items-center">
+        <header className="h-12 sticky z-1 inset-x-0 top-0 bg-blue-100/70 flex justify-between items-center">
             <a href="#home">
                 <img src={logo} className="relative left-4 h-12 w-auto hover:scale-120 animate-spin-custom" alt="Kingz Logo"/>
             </a>
