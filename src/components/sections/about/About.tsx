@@ -1,9 +1,9 @@
 import {languages, frameworks, libraries, developmentTools, designTools, databases, AILLM, professional} from "../../../constants/index"
-import portrait from '/src/assets/images/portrait-casual.png'
+import portrait from '/src/assets/images/family.jpeg'
 
 export default function About() {
     return(
-        <div id="about" className="h-500 mt-20 flex-col justify-items-center border-2 scroll-mt-12">
+        <div id="about" className="h-500 mt-20 flex-col justify-items-center scroll-mt-12">
             <div className="relative h-[25%] w-[70%] overflow-hidden rounded-lg">
                 <img src={portrait} className="w-full h-full object-fill relative"/>
             </div>

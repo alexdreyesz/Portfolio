@@ -3,9 +3,9 @@ import CareerCard from "./CareerCard"
 
 export default function Career() {
     return (
-        <div id="career" className="h-fit border-2 scroll-mt-12">
+        <div id="career" className="h-fit scroll-mt-12 pb-30">
 
-            <div className="h-22 w-auto pt-20 pb-30 flex-col justify-center text-center items-center content-center text-white">
+            <div className="h-22 w-auto pb-30 flex-col justify-center text-center items-center content-center text-white">
                 <p className="text-4xl pb-5">Career</p>
                 <p className="w-[80%] text-2xl mx-auto text-center">Here are some of the most important milestones in my career. I have been fortunate to have had to work with some amazing companies and teams</p>
             </div>

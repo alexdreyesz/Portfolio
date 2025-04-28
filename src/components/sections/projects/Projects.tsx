@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard"
 
 export default function Projects() {
     return (
-        <div id="projects" className="h-440 border-2 scroll-mt-12">
+        <div id="projects" className="h-440 scroll-mt-12">
 
-            <div className="h-22 w-auto pt-20 pb-30 flex-col justify-center text-center items-center content-center text-white">
+            <div className="h-22 w-auto pb-30 flex-col justify-center text-center items-center content-center text-white">
                 <p className="text-4xl pb-5">Projects</p>
                 <p className="w-[80%] text-2xl mx-auto text-center">Here are some of my most memorable projects that showcase my skill and experiences throught all of my journey.</p>
             </div>
