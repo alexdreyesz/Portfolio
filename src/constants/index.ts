@@ -1,127 +1,130 @@
-/* Constants For About Home Section */
-export const words = [
-    {text: "React", imgPath: "src/assets/icons/badges/frameworks/react.svg"},
-    {text: "Tailwind", imgPath: "src/assets/icons/badges/frameworks/tailwindcss.svg"},
-    {text: "Threejs", imgPath: "src/assets/icons/badges/frameworks/threejs.png"},
-    {text: "GSAP", imgPath: "src/assets/icons/badges/frameworks/gsap1.png"},
-];
+// Dynamically Import All Icons When Using npm build to be able to use it on githubpages
+const badgeIcons = import.meta.glob('../assets/icons/badges/**/*.@(svg|png)', { eager: true, import: 'default' });
+const logoIcons = import.meta.glob('../assets/icons/logo/*.@(png|svg)', { eager: true, import: 'default' });
 
+
+/* Constants For About Home Section */
+export const words= [
+    { text: "React", imgPath: badgeIcons['../assets/icons/badges/frameworks/react.svg'] as string },
+    { text: "Tailwind", imgPath: badgeIcons['../assets/icons/badges/frameworks/tailwindcss.svg'] as string },
+    { text: "Threejs", imgPath: badgeIcons['../assets/icons/badges/frameworks/threejs.png'] as string },
+    { text: "GSAP", imgPath: badgeIcons['../assets/icons/badges/frameworks/gsap1.png'] as string },
+];
 
 /* Constants For About Section */
 export const languages = [
-    {text: "C", iconPath: "src/assets/icons/badges/languages/c.svg"},
-    {text: "C++", iconPath: "src/assets/icons/badges/languages/cplusplus.svg"},
-    {text: "C#", iconPath: "src/assets/icons/badges/languages/csharp.svg"},
-    {text: "CSS", iconPath: "src/assets/icons/badges/languages/css3.svg"},
-    {text: "go", iconPath: "src/assets/icons/badges/languages/go.svg"},
-    {text: "HTML", iconPath: "src/assets/icons/badges/languages/html5.svg"},
-    {text: "Java", iconPath: "src/assets/icons/badges/languages/java.svg"},
-    {text: "JavaScript", iconPath: "src/assets/icons/badges/languages/javascript.svg"},
-    {text: "JSON", iconPath: "src/assets/icons/badges/languages/json.svg"},
-    {text: "Kotlin", iconPath: "src/assets/icons/badges/languages/kotlin.svg"},
-    {text: "MySQL", iconPath: "src/assets/icons/badges/languages/mysql.svg"},
-    {text: "PHP", iconPath: "src/assets/icons/badges/languages/php.svg"},
-    {text: "Python", iconPath: "src/assets/icons/badges/languages/python.svg"},
-    {text: "Rust", iconPath: "src/assets/icons/badges/languages/rust.svg"},
-    {text: "Swift", iconPath: "src/assets/icons/badges/languages/swift.svg"},
-    {text: "TypeScript", iconPath: "src/assets/icons/badges/languages/typescript.svg"},
+    { text: "C", iconPath: badgeIcons['../assets/icons/badges/languages/c.svg'] as string },
+    { text: "C++", iconPath: badgeIcons['../assets/icons/badges/languages/cplusplus.svg'] as string },
+    { text: "C#", iconPath: badgeIcons['../assets/icons/badges/languages/csharp.svg'] as string },
+    { text: "CSS", iconPath: badgeIcons['../assets/icons/badges/languages/css3.svg'] as string },
+    { text: "Go", iconPath: badgeIcons['../assets/icons/badges/languages/go.svg'] as string },
+    { text: "HTML", iconPath: badgeIcons['../assets/icons/badges/languages/html5.svg'] as string },
+    { text: "Java", iconPath: badgeIcons['../assets/icons/badges/languages/java.svg'] as string },
+    { text: "JavaScript", iconPath: badgeIcons['../assets/icons/badges/languages/javascript.svg'] as string },
+    { text: "JSON", iconPath: badgeIcons['../assets/icons/badges/languages/json.svg'] as string },
+    { text: "Kotlin", iconPath: badgeIcons['../assets/icons/badges/languages/kotlin.svg'] as string },
+    { text: "MySQL", iconPath: badgeIcons['../assets/icons/badges/languages/mysql.svg'] as string },
+    { text: "PHP", iconPath: badgeIcons['../assets/icons/badges/languages/php.svg'] as string },
+    { text: "Python", iconPath: badgeIcons['../assets/icons/badges/languages/python.svg'] as string },
+    { text: "Rust", iconPath: badgeIcons['../assets/icons/badges/languages/rust.svg'] as string },
+    { text: "Swift", iconPath: badgeIcons['../assets/icons/badges/languages/swift.svg'] as string },
+    { text: "TypeScript", iconPath: badgeIcons['../assets/icons/badges/languages/typescript.svg'] as string },
 ];
 
 export const frameworks = [
-    {text: "React", iconPath: "src/assets/icons/badges/frameworks/react.svg"},
-    {text: "Angular", iconPath: "src/assets/icons/badges/frameworks/angular.svg"},
-    {text: "Electron", iconPath: "src/assets/icons/badges/frameworks/electron.svg"},
-    {text: "Express", iconPath: "src/assets/icons/badges/frameworks/express.svg"},
-    {text: "FastApi", iconPath: "src/assets/icons/badges/frameworks/fastapi.svg"},
-    {text: "Flask", iconPath: "src/assets/icons/badges/frameworks/flask.svg"},
-    {text: "GSAP", iconPath: "src/assets/icons/badges/frameworks/gsap1.png"},
-    {text: "OpenGL", iconPath: "src/assets/icons/badges/frameworks/opengl.svg"},
-    {text: "TailwindCSS", iconPath: "src/assets/icons/badges/frameworks/tailwindcss.svg"},
-    {text: "ThreeJS", iconPath: "src/assets/icons/badges/frameworks/threejs.svg"},
-    {text: "Vue", iconPath: "src/assets/icons/badges/frameworks/vuejs.svg"},
+    { text: "React", iconPath: badgeIcons['../assets/icons/badges/frameworks/react.svg'] as string },
+    { text: "Angular", iconPath: badgeIcons['../assets/icons/badges/frameworks/angular.svg'] as string },
+    { text: "Electron", iconPath: badgeIcons['../assets/icons/badges/frameworks/electron.svg'] as string },
+    { text: "Express", iconPath: badgeIcons['../assets/icons/badges/frameworks/express.svg'] as string },
+    { text: "FastApi", iconPath: badgeIcons['../assets/icons/badges/frameworks/fastapi.svg'] as string },
+    { text: "Flask", iconPath: badgeIcons['../assets/icons/badges/frameworks/flask.svg'] as string },
+    { text: "GSAP", iconPath: badgeIcons['../assets/icons/badges/frameworks/gsap1.png'] as string },
+    { text: "OpenGL", iconPath: badgeIcons['../assets/icons/badges/frameworks/opengl.svg'] as string },
+    { text: "TailwindCSS", iconPath: badgeIcons['../assets/icons/badges/frameworks/tailwindcss.svg'] as string },
+    { text: "ThreeJS", iconPath: badgeIcons['../assets/icons/badges/frameworks/threejs.svg'] as string },
+    { text: "Vue", iconPath: badgeIcons['../assets/icons/badges/frameworks/vuejs.svg'] as string },
 ];
 
 export const libraries = [
-    {text: "Bootstrap", iconPath: "src/assets/icons/badges/libraries/bootstrap.svg"},
-    {text: "Anaconda", iconPath: "src/assets/icons/badges/libraries/anaconda.svg"},
-    {text: "Framermotion", iconPath: "src/assets/icons/badges/libraries/framermotion.svg"},
-    {text: "Framework7", iconPath: "src/assets/icons/badges/libraries/framework7.svg"},
-    {text: "JQuery", iconPath: "src/assets/icons/badges/libraries/jquery.svg"},
-    {text: "Matlab", iconPath: "src/assets/icons/badges/libraries/matlab.svg"},
-    {text: "Matplotlib", iconPath: "src/assets/icons/badges/libraries/matplotlib.svg"},
-    {text: "NPM", iconPath: "src/assets/icons/badges/libraries/npm.svg"},
-    {text: "Numpy", iconPath: "src/assets/icons/badges/libraries/numpy.svg"},
-    {text: "Pandas", iconPath: "src/assets/icons/badges/libraries/pandas.svg"},
-    {text: "Poetry", iconPath: "src/assets/icons/badges/libraries/poetry.svg"},
-    {text: "Pytorch", iconPath: "src/assets/icons/badges/libraries/pytorch.svg"},
-    {text: "React Bootstrap", iconPath: "src/assets/icons/badges/libraries/reactbootstrap.svg"},
-    {text: "React Navigation", iconPath: "src/assets/icons/badges/libraries/reactnavigation.svg"},
-    {text: "React Router", iconPath: "src/assets/icons/badges/libraries/reactrouter.svg"},
+    { text: "Bootstrap", iconPath: badgeIcons['../assets/icons/badges/libraries/bootstrap.svg'] as string },
+    { text: "Anaconda", iconPath: badgeIcons['../assets/icons/badges/libraries/anaconda.svg'] as string },
+    { text: "Framermotion", iconPath: badgeIcons['../assets/icons/badges/libraries/framermotion.svg'] as string },
+    { text: "Framework7", iconPath: badgeIcons['../assets/icons/badges/libraries/framework7.svg'] as string },
+    { text: "JQuery", iconPath: badgeIcons['../assets/icons/badges/libraries/jquery.svg'] as string },
+    { text: "Matlab", iconPath: badgeIcons['../assets/icons/badges/libraries/matlab.svg'] as string },
+    { text: "Matplotlib", iconPath: badgeIcons['../assets/icons/badges/libraries/matplotlib.svg'] as string },
+    { text: "NPM", iconPath: badgeIcons['../assets/icons/badges/libraries/npm.svg'] as string },
+    { text: "Numpy", iconPath: badgeIcons['../assets/icons/badges/libraries/numpy.svg'] as string },
+    { text: "Pandas", iconPath: badgeIcons['../assets/icons/badges/libraries/pandas.svg'] as string },
+    { text: "Poetry", iconPath: badgeIcons['../assets/icons/badges/libraries/poetry.svg'] as string },
+    { text: "Pytorch", iconPath: badgeIcons['../assets/icons/badges/libraries/pytorch.svg'] as string },
+    { text: "React Bootstrap", iconPath: badgeIcons['../assets/icons/badges/libraries/reactbootstrap.svg'] as string },
+    { text: "React Navigation", iconPath: badgeIcons['../assets/icons/badges/libraries/reactnavigation.svg'] as string },
+    { text: "React Router", iconPath: badgeIcons['../assets/icons/badges/libraries/reactrouter.svg'] as string },
 ];
 
 export const developmentTools = [
-    {text: "VScode", iconPath: "src/assets/icons/badges/development-tools/vscode.svg"},
-    {text: "Eclipse", iconPath: "src/assets/icons/badges/development-tools/eclipse.svg"},
-    {text: "Flutter", iconPath: "src/assets/icons/badges/development-tools/flutter.svg"},
-    {text: "Git", iconPath: "src/assets/icons/badges/development-tools/git.svg"},
-    {text: "Github", iconPath: "src/assets/icons/badges/development-tools/github.svg"},
-    {text: "Jypyter", iconPath: "src/assets/icons/badges/development-tools/jupyter.svg"},
-    {text: "Kubernetes", iconPath: "src/assets/icons/badges/development-tools/kubernetes.svg"},
-    {text: "Linux", iconPath: "src/assets/icons/badges/development-tools/linux.svg"},
-    {text: "Maven", iconPath: "src/assets/icons/badges/development-tools/maven.svg"},
-    {text: "Nodejs", iconPath: "src/assets/icons/badges/development-tools/nodejs.svg"},
-    {text: "Nodemon", iconPath: "src/assets/icons/badges/development-tools/nodemon.svg"},
-    {text: "Postman", iconPath: "src/assets/icons/badges/development-tools/postman.svg"},
-    {text: "Powershell", iconPath: "src/assets/icons/badges/development-tools/powershell.svg"},
-    {text: "Ubuntu", iconPath: "src/assets/icons/badges/development-tools/ubuntu.svg"},
-    {text: "Unity", iconPath: "src/assets/icons/badges/development-tools/unity.svg"},
-    {text: "Unreal Engine", iconPath: "src/assets/icons/badges/development-tools/unrealengine.svg"},
-    {text: "Visual Studio", iconPath: "src/assets/icons/badges/development-tools/visualstudio.svg"},
-    {text: "Vite", iconPath: "src/assets/icons/badges/development-tools/vite.svg"},
-    {text: "Vitejs", iconPath: "src/assets/icons/badges/development-tools/vitejs.svg"},
+    { text: "VScode", iconPath: badgeIcons['../assets/icons/badges/development-tools/vscode.svg'] as string },
+    { text: "Eclipse", iconPath: badgeIcons['../assets/icons/badges/development-tools/eclipse.svg'] as string },
+    { text: "Flutter", iconPath: badgeIcons['../assets/icons/badges/development-tools/flutter.svg'] as string },
+    { text: "Git", iconPath: badgeIcons['../assets/icons/badges/development-tools/git.svg'] as string },
+    { text: "Github", iconPath: badgeIcons['../assets/icons/badges/development-tools/github.svg'] as string },
+    { text: "Jypyter", iconPath: badgeIcons['../assets/icons/badges/development-tools/jupyter.svg'] as string },
+    { text: "Kubernetes", iconPath: badgeIcons['../assets/icons/badges/development-tools/kubernetes.svg'] as string },
+    { text: "Linux", iconPath: badgeIcons['../assets/icons/badges/development-tools/linux.svg'] as string },
+    { text: "Maven", iconPath: badgeIcons['../assets/icons/badges/development-tools/maven.svg'] as string },
+    { text: "Nodejs", iconPath: badgeIcons['../assets/icons/badges/development-tools/nodejs.svg'] as string },
+    { text: "Nodemon", iconPath: badgeIcons['../assets/icons/badges/development-tools/nodemon.svg'] as string },
+    { text: "Postman", iconPath: badgeIcons['../assets/icons/badges/development-tools/postman.svg'] as string },
+    { text: "Powershell", iconPath: badgeIcons['../assets/icons/badges/development-tools/powershell.svg'] as string },
+    { text: "Ubuntu", iconPath: badgeIcons['../assets/icons/badges/development-tools/ubuntu.svg'] as string },
+    { text: "Unity", iconPath: badgeIcons['../assets/icons/badges/development-tools/unity.svg'] as string },
+    { text: "Unreal Engine", iconPath: badgeIcons['../assets/icons/badges/development-tools/unrealengine.svg'] as string },
+    { text: "Visual Studio", iconPath: badgeIcons['../assets/icons/badges/development-tools/visualstudio.svg'] as string },
+    { text: "Vite", iconPath: badgeIcons['../assets/icons/badges/development-tools/vite.svg'] as string },
+    { text: "Vitejs", iconPath: badgeIcons['../assets/icons/badges/development-tools/vitejs.svg'] as string },
 ];
 
 export const designTools = [
-    {text: "Figma", iconPath: "src/assets/icons/badges/design-tools/figma.svg"},
-    {text: "Blender", iconPath: "src/assets/icons/badges/design-tools/blender.svg"},
-    {text: "Canva", iconPath: "src/assets/icons/badges/design-tools/canva.svg"},
-    {text: "Latex", iconPath: "src/assets/icons/badges/design-tools/latex.svg"},
-    {text: "Photoshop", iconPath: "src/assets/icons/badges/design-tools/photoshop.svg"},
-    {text: "Wordpress", iconPath: "src/assets/icons/badges/design-tools/wordpress.svg"},
+    { text: "Figma", iconPath: badgeIcons['../assets/icons/badges/design-tools/figma.svg'] as string },
+    { text: "Blender", iconPath: badgeIcons['../assets/icons/badges/design-tools/blender.svg'] as string },
+    { text: "Canva", iconPath: badgeIcons['../assets/icons/badges/design-tools/canva.svg'] as string },
+    { text: "Latex", iconPath: badgeIcons['../assets/icons/badges/design-tools/latex.svg'] as string },
+    { text: "Photoshop", iconPath: badgeIcons['../assets/icons/badges/design-tools/photoshop.svg'] as string },
+    { text: "Wordpress", iconPath: badgeIcons['../assets/icons/badges/design-tools/wordpress.svg'] as string },
 ];
 
 export const databases = [
-    {text: "MariaDB", iconPath: "src/assets/icons/badges/databases/mariadb.svg"},
-    {text: "Apache", iconPath: "src/assets/icons/badges/databases/apache.svg"},
-    {text: "Azure", iconPath: "src/assets/icons/badges/databases/azure.svg"},
-    {text: "Azure SQL", iconPath: "src/assets/icons/badges/databases/azuresqldatabase.svg"},
-    {text: "CosmosDB", iconPath: "src/assets/icons/badges/databases/cosmosdb.svg"},
-    {text: "mongoDB", iconPath: "src/assets/icons/badges/databases/mongodb.svg"},
-    {text: "Postgresql", iconPath: "src/assets/icons/badges/databases/postgresql.svg"},
+    { text: "MariaDB", iconPath: badgeIcons['../assets/icons/badges/databases/mariadb.svg'] as string },
+    { text: "Apache", iconPath: badgeIcons['../assets/icons/badges/databases/apache.svg'] as string },
+    { text: "Azure", iconPath: badgeIcons['../assets/icons/badges/databases/azure.svg'] as string },
+    { text: "Azure SQL", iconPath: badgeIcons['../assets/icons/badges/databases/azuresqldatabase.svg'] as string },
+    { text: "CosmosDB", iconPath: badgeIcons['../assets/icons/badges/databases/cosmosdb.svg'] as string },
+    { text: "mongoDB", iconPath: badgeIcons['../assets/icons/badges/databases/mongodb.svg'] as string },
+    { text: "Postgresql", iconPath: badgeIcons['../assets/icons/badges/databases/postgresql.svg'] as string },
 ];
 
 export const AILLM = [
-    {text: "Chatgpt", iconPath: "src/assets/icons/badges/ai-llm/chatgpt.svg"},
-    {text: "Claude", iconPath: "src/assets/icons/badges/ai-llm/claude.svg"},
-    {text: "Copilot", iconPath: "src/assets/icons/badges/ai-llm/copilot.svg"},
-    {text: "Deepseek", iconPath: "src/assets/icons/badges/ai-llm/deepseek.svg"},
-    {text: "Google Gemini", iconPath: "src/assets/icons/badges/ai-llm/google-gemini.svg"},
-    {text: "Huggingface", iconPath: "src/assets/icons/badges/ai-llm/huggingface.svg"},
+    { text: "Chatgpt", iconPath: badgeIcons['../assets/icons/badges/ai-llm/chatgpt.svg'] as string },
+    { text: "Claude", iconPath: badgeIcons['../assets/icons/badges/ai-llm/claude.svg'] as string },
+    { text: "Copilot", iconPath: badgeIcons['../assets/icons/badges/ai-llm/copilot.svg'] as string },
+    { text: "Deepseek", iconPath: badgeIcons['../assets/icons/badges/ai-llm/deepseek.svg'] as string },
+    { text: "Google Gemini", iconPath: badgeIcons['../assets/icons/badges/ai-llm/google-gemini.svg'] as string },
+    { text: "Huggingface", iconPath: badgeIcons['../assets/icons/badges/ai-llm/huggingface.svg'] as string },
 ];
 
 export const professional = [
-    {text: "Slack", iconPath: "src/assets/icons/badges/professional/slack.svg"},
-    {text: "Jira", iconPath: "src/assets/icons/badges/professional/jira.svg"},
-    {text: "LinkedIn", iconPath: "src/assets/icons/badges/professional/linkedin.svg"},
-    {text: "Notion", iconPath: "src/assets/icons/badges/professional/notion.svg"},
-    {text: "Stackoverflow", iconPath: "src/assets/icons/badges/professional/stackoverflow.svg"},
+    { text: "Slack", iconPath: badgeIcons['../assets/icons/badges/professional/slack.svg'] as string },
+    { text: "Jira", iconPath: badgeIcons['../assets/icons/badges/professional/jira.svg'] as string },
+    { text: "LinkedIn", iconPath: badgeIcons['../assets/icons/badges/professional/linkedin.svg'] as string },
+    { text: "Notion", iconPath: badgeIcons['../assets/icons/badges/professional/notion.svg'] as string },
+    { text: "Stackoverflow", iconPath: badgeIcons['../assets/icons/badges/professional/stackoverflow.svg'] as string },
 ];
 
 /* Constants For Career Section */
-
 export const cards = {
     hillsborough: {
-        imgUrl: "src/assets/icons/logo/hillsborough.png",
+        imgUrl: logoIcons['../assets/icons/logo/hillsborough.png'] as string,
         date: "January 2019 - May 2021",
         title: "A.A. in Computer Science",
         location: "Tampa, Florida",
@@ -129,7 +132,7 @@ export const cards = {
     },
 
     xime: {
-        imgUrl: "src/assets/icons/logo/xime.png",
+        imgUrl: logoIcons['../assets/icons/logo/xime.png'] as string ,
         date: "November 2019 - August 2022",
         title: "Full Stack Developer",
         location: "Los Angeles, California",
@@ -137,7 +140,7 @@ export const cards = {
     },
     
     ucf: {
-      imgUrl: "src/assets/icons/logo/ucf.png",
+      imgUrl: logoIcons['../assets/icons/logo/ucf.png'] as string ,
       date: "August 2022 - December 2025",
       title: "B.S. in Computer Science",
       location: "Orlando, Florida",
@@ -145,7 +148,7 @@ export const cards = {
     },
     
     spaceForce: {
-      imgUrl: "src/assets/icons/logo/ussf.png",
+      imgUrl: logoIcons['../assets/icons/logo/ussf.png'] as string ,
       date: "January 2025 - Present",
       title: "Full Stack Developer",
       location: "Orlando, Florida",
@@ -154,7 +157,6 @@ export const cards = {
 };
 
 /* Constants For Projects Section */
-
 export const projects = {
     
 };

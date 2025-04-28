@@ -1,5 +1,3 @@
-import { getAssetPathSRC } from '../../../utils/getAssetPathSRC'
-
 interface CareerCardProps {
     imgUrl: string;
     date: string;
@@ -15,7 +13,7 @@ export default function CareerCards({imgUrl, date, title, location, description}
                 
                 <div className="mt-5 flex">
 
-                    <img src={getAssetPathSRC(imgUrl)} className="h-23 w-auto ml-6 mr-5"/>
+                    <img src={imgUrl} className="h-23 w-auto ml-6 mr-5"/>
 
                     <div className="w-fit">
                         <p className="">{date}</p>
