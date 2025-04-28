@@ -3,7 +3,7 @@ import portrait from '/src/assets/images/portrait-casual.png'
 
 export default function About() {
     return(
-        <div id="about" className="h-500 mt-20 flex-col justify-items-center border-2 border-white">
+        <div id="about" className="h-500 mt-20 flex-col justify-items-center border-2 border-white scroll-mt-12">
             <div className="relative h-[25%] w-[70%]">
                 <img src={portrait} className="w-full h-full object-cover rounded-lg"/>
             </div>

@@ -3,7 +3,7 @@ import CareerCards from "./CareerCard"
 
 export default function Career() {
     return (
-        <div id="career" className="h-fit border-2 border-amber-700">
+        <div id="career" className="h-fit border-2 border-amber-700 scroll-mt-12">
             
             <div className="pt-20 pl-20">
                 <CareerCards
@@ -12,6 +12,7 @@ export default function Career() {
                     title={cards.hillsborough.title}
                     location={cards.hillsborough.location}
                     description={cards.hillsborough.description}
+                    size={"h-23"}
                 />
             </div>
 
@@ -22,6 +23,7 @@ export default function Career() {
                     title={cards.xime.title}
                     location={cards.xime.location}
                     description={cards.xime.description}
+                    size={"h-12"}
                 />
             </div>
 
@@ -32,6 +34,7 @@ export default function Career() {
                     title={cards.ucf.title}
                     location={cards.ucf.location}
                     description={cards.ucf.description}
+                    size={"h-20"}
                 />
             </div>
 
@@ -42,6 +45,7 @@ export default function Career() {
                     title={cards.spaceForce.title}
                     location={cards.spaceForce.location}
                     description={cards.spaceForce.description}
+                    size={"h-22"}
                 />
             </div>
             

@@ -7,7 +7,7 @@ function Header() {
         // Header Container 
         <header className="h-12 sticky z-1 inset-x-0 top-0 bg-blue-100/70 flex justify-between items-center">
             <a href="#home">
-                <img src={logo} className="relative left-4 h-12 w-auto hover:scale-120 animate-spin-custom" alt="Kingz Logo"/>
+                <img src={logo} className="relative left-6 h-12 w-auto hover:scale-120 animate-spin-custom" alt="Kingz Logo"/>
             </a>
 
             <nav className="relative right-8 flex space-x-18">
@@ -18,8 +18,6 @@ function Header() {
                 <PlayMusic/>
             </nav>   
         </header>
-
-        
     )
 }
 
