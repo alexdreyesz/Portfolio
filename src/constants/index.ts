@@ -152,4 +152,9 @@ export const cards = {
       description: "Developing an AI-powered IT solution that leverages technologies like OpenAI, Azure SQL, ServiceNow, and Archibus to streamline IT operations, reduce ticket volume, and enhance user productivity through intelligent, self-service support.",
     }
 };
-  
+
+/* Constants For Projects Section */
+
+export const projects = {
+    
+};
