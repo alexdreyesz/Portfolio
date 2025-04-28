@@ -1,3 +1,4 @@
+import { getAssetPath } from '../../../utils/getAssetPath'
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber'
 //import { OrbitControls } from '@react-three/drei';
@@ -5,7 +6,7 @@ import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
 function Model() {
-    const sunny = useGLTF('/models/sunny-boat.glb');
+    const sunny = useGLTF(getAssetPath('/models/sunny-boat.glb'));
     const ref = useRef<THREE.Object3D>(null!);
 
     const time = useRef(0);

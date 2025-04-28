@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div>
+    <div className="bg-black">
       {/*<CanvasBackground/>*/}
       <Header/>
       <main className="overflow-hidden">

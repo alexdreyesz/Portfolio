@@ -1,10 +1,11 @@
+import { getAssetPath } from '../../../utils/getAssetPath'
 import { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
 export default function BackgroundSphere() {
-  const { scene } = useGLTF("/models/backgrounds/galaxy-sphere.glb");
+  const { scene } = useGLTF(getAssetPath("/models/backgrounds/galaxy-sphere.glb"));
   const ref = useRef<THREE.Object3D>(null!);;
 
   useFrame(() => {

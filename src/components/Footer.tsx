@@ -3,11 +3,11 @@ import linkedin from '../assets/icons/linkedin.png'
 import resume from '../assets/icons/resume.png'
 import resumePdf from '../assets/documents/AlexReyes_Resume.pdf'
 
-import PlayAudio from './common/audio/playAudio'
-
 import bonk from '../assets/sound/bonk.mp3'
 import frog from '../assets/sound/frog-laughing.mp3'
 import king from '../assets/sound/Im Gonna Be King Of The Pirates!.mp3'
+
+import PlayAudio from './common/audio/playAudio'
 
 function Footer() {
     return(
