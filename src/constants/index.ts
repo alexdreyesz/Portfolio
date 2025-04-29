@@ -150,7 +150,7 @@ export const cards = {
     spaceForce: {
       imgUrl: logoIcons['../assets/icons/logo/ussf.png'] as string,
       date: "January 2025 - Present",
-      title: "Full Stack Developer",
+      title: "Software Engineer Intern",
       location: "Orlando, Florida",
       description: "Developing an AI-powered IT solution that leverages technologies like OpenAI, Azure SQL, ServiceNow, and Archibus to streamline IT operations, reduce ticket volume, and enhance user productivity through intelligent, self-service support.",
     }

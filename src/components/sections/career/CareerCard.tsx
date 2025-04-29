@@ -9,9 +9,11 @@ interface CareerCardProps {
 
 export default function CareerCard({imgUrl, date, title, location, description, size}: CareerCardProps) {
     return (
-        <div className="h-fit w-150 rounded-2xl border-1 border-gray-800 glass-background">
+        <div className="h-fit w-150 rounded-2xl border-1 border-gray-800">
             <div className="relative left-1.5 bottom-0.5 grid grid-rows-2 text-white content-center items-center">
                 
+                <div className="w-full h-full z-[-1] absolute right-[6px] top-[2px]  rounded-2xl  backdrop-blur-md bg-white/0"></div>
+
                 <div className="mt-3 flex">
                     <div className="h-30 w-30 ml-2 mr-4 flex justify-center items-center content-center">
                         <img src={imgUrl} className={`${size} w-auto animation-rotate-y`}/>
