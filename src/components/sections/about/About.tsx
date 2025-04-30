@@ -1,94 +1,100 @@
-import {languages, frameworks, libraries, developmentTools, designTools, databases, AILLM, professional} from "../../../constants/index"
-import portrait from '/src/assets/images/family.jpeg'
+import { words, languages, frameworks, libraries, developmentTools, designTools, databases, AILLM, professional } from "../../../constants/index"
+import portraitFormal from '/src/assets/images/portrait-formal.png'
+import family from '/src/assets/images/family.jpeg'
+
+import IconShowCaseAbout from "./IconShowCaseAbout";
 
 import GSAPScrollBehaviorAbout from "../../../utils/gsapScrollBehaviorAbout"
 
 export default function About() {
 
-    GSAPScrollBehaviorAbout();
+    //GSAPScrollBehaviorAbout();
 
     return(
         <div id="about" className="h-500 mt-20 flex-col justify-items-center scroll-mt-12">
-            <div className="relative h-[25%] w-[70%] overflow-hidden rounded-lg gsap-about-top">
-                <img src={portrait} className="w-full h-full object-fill relative"/>
-            </div>
+            
+            <div className="w-full flex justify-evenly mt-10 mb-10">
+                <div className="relative h-120 w-auto overflow-hidden rounded-lg gsap-about-left">
+                    <img src={portraitFormal} className="w-full h-full object-fill relative"/>
+                </div>
 
-            <div className="w-250 h-fit mt-5 text-2xl text-white gsap-about-top">
-                <p className="text-center text-4xl pt-3 pb-5">Who am I?</p>
-                <p className="flex-col text-2xl/9">I'm Alex D. Reyes, a computer science student at the University of Central Florida. I am currently working with U.S. Space Force on askPolaris. In my free time, I enjoy listening to music,  playing video games, and spending time with friends and family.</p>
-            </div>
-
-            <div className="w-250 h-fit flex-col mt-10 text-2xl text-white gsap-about-down">
-                <p>Languages:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {languages.map((language) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={language.iconPath}/>
-                    ))}
+                <div className="relative h-120 w-auto overflow-hidden rounded-lg gsap-about-right">
+                    <img src={family} className="w-full h-full object-fill relative"/>
                 </div>
             </div>
 
-            <div className="w-250 h-fit mt-10 text-2xl text-white gsap-about-down">
-                <p>FrameWorks:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {frameworks.map((framework) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={framework.iconPath}/>
-                    ))}
-                </div>
-            </div>
+            <div className="w-250 h-fit mt-13 text-2xl text-white gsap-about-top">
 
-            <div className="w-250 h-fit mt-10 text-2xl text-white gsap-about-down">
-                <p>Libraries:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {libraries.map((library) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={library.iconPath}/>
-                    ))}
-                </div>
-            </div>
+                <div className="w-full h-8 mb-5 items-center justify-center text-center overflow-hidden">
+                    <p className="relative bottom-[5px] font-bold text-3xl text-white">
+                        Welcome To My Potfolio! 
+                        
+                        Made With &nbsp;
+                        <span className="slide">
+                            <span className="wrapper">
+                                {words.map((word) => (
+                                    <span key={word.text} className="flex items-center gap-2 pb-2">
+                                        <img src={word.imgPath} className="h-6" alt={word.text}>
+                                        </img>
 
-            <div className="w-250 h-fit mt-10 text-2xl text-white gsap-about-down">
-                <p>Development Tools:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {developmentTools.map((tool) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={tool.iconPath}/>
-                    ))}
+                                        <span>{word.text}</span>
+                                    </span>
+                                ))}
+                            </span>
+                        </span>
+                    </p>
                 </div>
+ 
+                <p className="flex-col text-2xl/9">As stated before my name is Alex D. Reyes, and I am a Computer Science student at the University of Central Florida. I am currently collaborating with U.S. Space Force to develop AskPolaris, an AI-powered IT solution tool. Some of my hobbies are listening to music, playing video games, playing football, archery, and spending quality time with friends and family.</p>
             </div>
+            
+            <IconShowCaseAbout 
+                CategoryName="Languages"
+                CategoryObject={languages}
+                GSAPDirection="down"
+            />
 
-            <div className="w-250 h-fit mt-10 text-2xl text-white gsap-about-down">
-                <p>Design Tools:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {designTools.map((tool) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={tool.iconPath}/>
-                    ))}
-                </div>
-            </div>
+            <IconShowCaseAbout 
+                CategoryName="Frameworks"
+                CategoryObject={frameworks}
+                GSAPDirection="down"
+            />
 
-            <div className="w-250 h-fit mt-10 text-2xl text-white gsap-about-down">
-                <p>Databases:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {databases.map((database) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={database.iconPath}/>
-                    ))}
-                </div>
-            </div>
+            <IconShowCaseAbout 
+                CategoryName="Libraries"
+                CategoryObject={libraries}
+                GSAPDirection="down"
+            />
 
-            <div className="w-250 h-fit mt-10 text-2xl text-white gsap-about-down">
-                <p>AI & LLMs:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {AILLM.map((ai) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={ai.iconPath}/>
-                    ))}
-                </div>
-            </div>
+            <IconShowCaseAbout 
+                CategoryName="Development Tools"
+                CategoryObject={developmentTools}
+                GSAPDirection="down"
+            />
 
-            <div className="w-250 h-fit mt-10 text-2xl text-white gsap-about-down">
-                <p>Professional:</p>
-                <div className="flex flex-wrap flex-row pt-2 gap-2">
-                    {professional.map((tool) => (
-                        <img className="h-14 animation-rotate-y mt-2" src={tool.iconPath}/>
-                    ))}
-                </div>
-            </div>
+            <IconShowCaseAbout 
+                CategoryName="Design Tools"
+                CategoryObject={designTools}
+                GSAPDirection="down"
+            />
+
+            <IconShowCaseAbout 
+                CategoryName="Databases"
+                CategoryObject={databases}
+                GSAPDirection="down"
+            />
+
+            <IconShowCaseAbout 
+                CategoryName="AI & LLMs"
+                CategoryObject={AILLM}
+                GSAPDirection="down"
+            />
+
+            <IconShowCaseAbout 
+                CategoryName="Professional"
+                CategoryObject={professional}
+                GSAPDirection="down"
+            />
         </div>
     )
 }

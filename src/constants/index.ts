@@ -238,6 +238,7 @@ export const projects = {
             {text: "TypeScript", badgeUrl: badgeIcons['../assets/icons/badges/languages/typescript.svg'] as string},
             {text: "React", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/react.svg'] as string},
             {text: "AzureSQLDatabse", badgeUrl: badgeIcons['../assets/icons/badges/databases/azuresqldatabase.svg'] as string},
+            {text: "Azure", badgeUrl: badgeIcons['../assets/icons/badges/databases/azure.svg'] as string},
             {text: "Flask", badgeUrl: badgeIcons['../assets/icons/badges/frameworks/flask.svg'] as string},
             {text: "Chatgpt", badgeUrl: badgeIcons['../assets/icons/badges/ai-llm/chatgpt.svg'] as string},
         ]

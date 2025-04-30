@@ -10,14 +10,14 @@ import GSAPScrollBehaviorCareer from "../../../utils/gsapScrollBehaviorCareer"
 
 export default function Career() {
 
-    GSAPScrollBehaviorCareer();
+    //GSAPScrollBehaviorCareer();
 
     return (
-        <div id="career" className="h-fit scroll-mt-12 pb-30">
+        <div id="career" className="h-fit scroll-mt-12 pb-30 pt-20">
 
             <div className="h-22 w-auto pb-35 flex-col justify-center text-center items-center content-center text-white gsap-career-title">
                 <p className="text-4xl pb-5">Career</p>
-                <p className="w-[80%] text-2xl mx-auto text-center">Here are some of the most important milestones in my career. I have been fortunate to have had to work with some amazing companies and teams</p>
+                <p className="w-[80%] text-2xl/9 mx-auto text-center">These are some of the highlights of my career journey. I’ve been fortunate to pursue higher education and to collaborate with incredible companies, individuals, and teams.</p>
             </div>
             
             <div className="pt-20 pl-20 flex gsap-career-card-left">

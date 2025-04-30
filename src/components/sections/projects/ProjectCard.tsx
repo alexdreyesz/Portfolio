@@ -1,4 +1,5 @@
 import linkIcon from "../../../assets/icons/icons/link.svg"
+import IconShowCaseProject from "./IconShowCaseProject";
 
 interface ProjectCardProps {
     imgUrl: string;
@@ -31,11 +32,9 @@ export default function ProjectCards({imgUrl, link, date, title, description, te
 
                 <p className="h-fit w-auto ml-6 mr-6 mb-1 text-base/7">{description}</p>
 
-                <div className="flex flex-wrap flex-row pt-2 gap-3 ml-6 mr-6 mb-7">
-                    {technologies.map((technology) => (
-                        <img src={technology.badgeUrl} className="h-14 animation-rotate-y mt-5" alt={technology.text}/>
-                    ))}
-                </div>
+                <IconShowCaseProject
+                    CategoryObject={technologies}
+                />
             </div>
         </div>
     );
