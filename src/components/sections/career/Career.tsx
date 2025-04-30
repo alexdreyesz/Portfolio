@@ -19,7 +19,7 @@ export default function Career() {
                 <p className="text-4xl pb-5">Career</p>
                 <p className="w-[80%] text-2xl/9 mx-auto text-center">These are some of the highlights of my career journey. I’ve been fortunate to pursue higher education and to collaborate with incredible companies, individuals, and teams.</p>
             </div>
-            
+            {/*
             <div className="pt-20 pl-20 flex gsap-career-card-left">
                 <CareerCard
                     imgUrl={cards.hillsborough.imgUrl}
@@ -100,7 +100,8 @@ export default function Career() {
                     size={"h-22"}
                 />
             </div>
-            
+            */}
+
         </div>
     )
 }

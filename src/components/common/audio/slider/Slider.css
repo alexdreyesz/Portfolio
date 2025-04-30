@@ -1,0 +1,31 @@
+.slider-music {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #382c84 0%, #382c84 var(--progress), #fff var(--progress), #fff 100%);
+    outline: none;
+}
+
+.slider-music:hover {
+    background: linear-gradient(to right, #2a2264 0%, #2a2264 var(--progress), #fff var(--progress), #fff 100%);
+}
+  
+
+.slider-music::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #496cdd;
+    cursor: pointer;
+    margin-top: -6px; 
+}
+
+.slider-music::-webkit-slider-runnable-track {
+    height: 8px;
+    background: transparent; 
+    border-radius: 5px;
+}
