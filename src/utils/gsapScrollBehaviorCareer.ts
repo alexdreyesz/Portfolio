@@ -15,7 +15,7 @@ export default function GSAPScrollBehaviorCareer() {
                 ease: "power1.inOut",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
-                    start: "top 110%",
+                    start: "top 100%",
                     toggleActions: "play none none reverse",
                 }
             });
@@ -30,7 +30,7 @@ export default function GSAPScrollBehaviorCareer() {
                 ease: "power1.inOut",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
-                    start: "top 110%",
+                    start: "top 100%",
                     toggleActions: "play none none reverse",
                 }
             });

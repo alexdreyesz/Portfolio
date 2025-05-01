@@ -141,8 +141,8 @@ export default function PlayMusic() {
                     
                     <div className="h-[70%] relative bottom-1 flex content-center items-center g-amber-300">
                         
-                        <div className="h-33 w-33 ml-9 rounded-2xl bg-amber-50">
-                            <img src={songs[index].imgUrl} className="h-auto w-auto rounded-2xl object-cover"/>
+                        <div className="h-33 w-33 ml-9 rounded-2xl bg-amber-50 overflow-hidden">
+                            <img src={songs[index].imgUrl} className="h-fill w-auto rounded-2xl object-cover"/>
                         </div>
                         
                         <div className="flex-col pl-6 justify-center text-left content-center">

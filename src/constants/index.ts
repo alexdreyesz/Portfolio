@@ -131,7 +131,7 @@ export const cards = {
         imgUrl: logoIcons['../assets/icons/logo/hillsborough.png'] as string,
         date: "January 2019 - May 2021",
         title: "A.A. in Computer Science",
-        location: "Tampa, Florida",
+        location: "Hillsborough Community College",
         description: "Completed an Associate of Arts (A.A.) degree with a focus in Computer Science at Hillsborough Community College in Tampa, Florida. Gained a strong foundation in programming, mathematics, and problem-solving, preparing for further studies and a career in technology.",
     },
 
@@ -139,7 +139,7 @@ export const cards = {
         imgUrl: logoIcons['../assets/icons/logo/xime.png'] as string,
         date: "November 2019 - August 2022",
         title: "Full Stack Developer",
-        location: "Los Angeles, California",
+        location: "Xime Beauty",
         description: "Designed, developed, and deployed LAMP stack websites, managed product databases, and automated wholesale catalog creation. Led the migration of company websites to Shopify and integrated QuickBooks for automated financial tracking, improving operational efficiency and supporting e-commerce growth.",
     },
     
@@ -147,7 +147,7 @@ export const cards = {
       imgUrl: logoIcons['../assets/icons/logo/ucf.png'] as string,
       date: "August 2022 - December 2025",
       title: "B.S. in Computer Science",
-      location: "Orlando, Florida",
+      location: "Univerisity of Central Florida",
       description: "Currently pursuing a Bachelor of Science (B.S.) degree in Computer Science at the University of Central Florida (UCF). Building advanced knowledge in software development, algorithms, data structures, and systems programming while preparing for a career in the technology industry.",
     },
     
@@ -155,7 +155,7 @@ export const cards = {
       imgUrl: logoIcons['../assets/icons/logo/ussf.png'] as string,
       date: "January 2025 - Present",
       title: "Software Engineer Intern",
-      location: "Orlando, Florida",
+      location: "U.S Space Force",
       description: "Developing an AI-powered IT solution that leverages technologies like OpenAI, Azure SQL, ServiceNow, and Archibus to streamline IT operations, reduce ticket volume, and enhance user productivity through intelligent, self-service support.",
     }
 };
@@ -254,4 +254,5 @@ export const songs = [
     { game: "Moonlighter", name: "Tired Rynoka", imgUrl: songImage['../assets/music/moonlighter/moonlighter-soundtrack.jpg'] as string, songUrl: songPath['../assets/music/moonlighter/Moonlighter-Tired-Rynoka.mp3'] as string},
     { game: "Sea Of Stars", name: "The Great Archives", imgUrl: songImage['../assets/music/sea-of-stars/sea-of-stars-soundtrack.jpg'] as string, songUrl: songPath['../assets/music/sea-of-stars/the-great-archives.mp3'] as string},
     { game: "Hollow Knight", name: "Reflection", imgUrl: songImage['../assets/music/hollow-knight/hollow-knight-soundtrack.jpg'] as string, songUrl: songPath['../assets/music/hollow-knight/reflection.mp3'] as string},
+    { game: "Chuy Montana", name: "Perdoname Mama", imgUrl: songImage['../assets/music/pirata/pirata-soundtrack.jpg'] as string, songUrl: songPath['../assets/music/pirata/perdon-mama.mp3'] as string},
 ];
