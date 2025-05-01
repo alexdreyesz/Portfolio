@@ -10,7 +10,7 @@ import GSAPScrollBehaviorCareer from "../../../utils/gsapScrollBehaviorCareer"
 
 export default function Career() {
 
-    //GSAPScrollBehaviorCareer();
+    GSAPScrollBehaviorCareer();
 
     return (
         <div id="career" className="h-fit scroll-mt-12 pb-30 pt-20">
@@ -19,7 +19,7 @@ export default function Career() {
                 <p className="text-4xl pb-5">Career</p>
                 <p className="w-[80%] text-2xl/9 mx-auto text-center">These are some of the highlights of my career journey. I’ve been fortunate to pursue higher education and to collaborate with incredible companies, individuals, and teams.</p>
             </div>
-            {/*
+            
             <div className="pt-20 pl-20 flex gsap-career-card-left">
                 <CareerCard
                     imgUrl={cards.hillsborough.imgUrl}
@@ -32,7 +32,7 @@ export default function Career() {
                 
                 <div className="ml-auto mr-40">
                     <MasterSword
-                        badge3DURL="models/badges/master-sword.glb"
+                        badge3DURL="models/badges/master-sword-compressed.glb"
                         positionXYZ={{ x: 0, y: 0, z: -1 }}
                         rotationXYZ={{ x: 1.4, y: -0.5, z: 0 }}
                         animationXYZ={{x: 0.00, y: 0.002, z: 0.005}}
@@ -43,7 +43,7 @@ export default function Career() {
             <div className="pt-20 pr-20 flex justify-end gsap-career-card-right">
                 <div className="ml-30 mr-auto">
                     <Digivice
-                        badge3DURL="models/badges/digimon-digivice.glb"
+                        badge3DURL="models/badges/digimon-digivice-compressed.glb"
                         positionXYZ={{ x: 0, y: 0, z: -430 }}
                         rotationXYZ={{ x: 0, y: 9.5, z: -0.005 }}
                         animationXYZ={{x: 0, y: 0.004, z: 0}}
@@ -72,7 +72,7 @@ export default function Career() {
 
                 <div className="ml-auto mr-40">
                     <StarCompass
-                        badge3DURL="models/badges/star-compass.glb"
+                        badge3DURL="models/badges/star-compass-compressed.glb"
                         positionXYZ={{ x: 0, y: 0, z: 1 }}
                         rotationXYZ={{ x: 0, y: 0, z: 0 }}
                         animationXYZ={{x: 0.003, y: 0.002, z: 0.001}}
@@ -83,7 +83,7 @@ export default function Career() {
             <div className="pt-20 pr-20 flex justify-end gsap-career-card-right">
                 <div className="ml-30 mr-auto">
                     <GomuGomuNoMi
-                        badge3DURL="models/badges/gomu-gomu-no-mi.glb"
+                        badge3DURL="models/badges/gomu-gomu-no-mi-compressed.glb"
                         positionXYZ={{ x: 0, y: -25, z: -240 }}
                         rotationXYZ={{ x: 0, y: 1, z: 0 }}
                         animationXYZ={{x: 0, y: 0.004, z: 0}}
@@ -100,7 +100,6 @@ export default function Career() {
                     size={"h-22"}
                 />
             </div>
-            */}
 
         </div>
     )

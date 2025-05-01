@@ -1,9 +1,17 @@
 import { getAssetPath } from '../../../utils/getAssetPath'
 import { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber'
-//import { OrbitControls } from '@react-three/drei';
-import { useGLTF } from '@react-three/drei';
+
 import * as THREE from 'three';
+import { Canvas, useFrame } from '@react-three/fiber'
+import { useGLTF } from '@react-three/drei';
+//import { OrbitControls } from '@react-three/drei';
+
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath('/draco/');
+(GLTFLoader.prototype as unknown as { setDRACOLoader: (loader: DRACOLoader) => void }).setDRACOLoader(dracoLoader);
 
 interface BadgeIconsProps {
     badge3DURL: string;
@@ -15,6 +23,7 @@ interface BadgeIconsProps {
 export default function BadgeIcon({badge3DURL, positionXYZ, rotationXYZ, animationXYZ}: BadgeIconsProps) {
 
     function Model({badge3DURL, positionXYZ, rotationXYZ, animationXYZ}: BadgeIconsProps) {
+        useGLTF.preload(getAssetPath(badge3DURL));
         const badge = useGLTF(getAssetPath(badge3DURL));
         const ref = useRef<THREE.Object3D>(null!);
     

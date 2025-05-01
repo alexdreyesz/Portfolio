@@ -6,7 +6,7 @@ function Home() {
         <section id="home" className="h-screen pt-12 relative overflow-hidden scroll-mt-12">
             <Title/>
             <div className="pb-8"></div>
-            {/*<Sunny/>*/}
+            <Sunny/>
         </section>
     )
 }

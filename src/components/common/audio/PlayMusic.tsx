@@ -65,11 +65,17 @@ export default function PlayMusic() {
         setToggleIcon(playIcon);
     }
 
+    const volumeRef = useRef(volume);
+
+    useEffect(() => {
+    volumeRef.current = volume;
+    }, [volume]);
+
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.pause();
             audioRef.current.load();
-            audioRef.current.volume = volume;
+            audioRef.current.volume = volumeRef.current;
             audioRef.current.play().catch((err) => {
                 if (err.name !== "NotAllowedError") {
                     console.error("Unexpected audio play error:", err);
@@ -77,6 +83,12 @@ export default function PlayMusic() {
             });
         }
     }, [index]);
+
+    useEffect(() => {
+        if (audioRef.current) {
+          audioRef.current.volume = volume;
+        }
+    }, [volume]);
 
     /*
     useEffect(() => {

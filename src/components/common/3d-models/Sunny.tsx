@@ -1,12 +1,22 @@
-import { getAssetPath } from '../../../utils/getAssetPath'
+import { getAssetPath } from '../../../utils/getAssetPath';
 import { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber'
-//import { OrbitControls } from '@react-three/drei';
-import { useGLTF } from '@react-three/drei';
+
 import * as THREE from 'three';
+import { Canvas, useFrame } from '@react-three/fiber'
+import { useGLTF} from '@react-three/drei';
+//import { OrbitControls } from '@react-three/drei';
+
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath('/draco/');
+(GLTFLoader.prototype as unknown as { setDRACOLoader: (loader: DRACOLoader) => void }).setDRACOLoader(dracoLoader);
 
 function Model() {
-    const sunny = useGLTF(getAssetPath('/models/sunny-boat.glb'));
+    useGLTF.preload(getAssetPath('/models/sunny-boat-compressed.glb'));
+    const { scene } = useGLTF(getAssetPath('/models/sunny-boat-compressed.glb'));
+    
     const ref = useRef<THREE.Object3D>(null!);
 
     const time = useRef(0);
@@ -24,7 +34,7 @@ function Model() {
     return (
         <primitive 
             ref={ref}
-            object={sunny.scene}
+            object={scene}
             position={[0, -2.5, 0]}
         />
     );

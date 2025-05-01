@@ -8,7 +8,7 @@ import GSAPScrollBehaviorAbout from "../../../utils/gsapScrollBehaviorAbout"
 
 export default function About() {
 
-    //GSAPScrollBehaviorAbout();
+    GSAPScrollBehaviorAbout();
 
     return(
         <div id="about" className="h-500 mt-20 flex-col justify-items-center scroll-mt-12">

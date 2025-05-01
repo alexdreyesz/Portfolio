@@ -5,7 +5,7 @@ import GSAPScrollBehaviorProject from "../../../utils/gsapScrollBehaviorProject"
 
 export default function Projects() {
     
-    //GSAPScrollBehaviorProject();
+    GSAPScrollBehaviorProject();
     
     return (
         <div id="projects" className="h-420 scroll-mt-12">
