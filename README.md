@@ -4,14 +4,29 @@
 This is my personal portfolio website. It showcases my projects, skills, and experience through an interactive and dynamic user experience. If you are coming from my portfolio welcome to inception 🤑 if you are not ignore this 😭.
 
 ## Home
+<div align="center">
+  <img src="public/images/Home.png" height="300" alt="Home Page Screenshot"/>
+</div>
 
 ## About
+<div align="center">
+  <img src="public/images/About.png" height="300" alt="About Page Screenshot"/>
+</div>
 
 ## Carrer
+<div align="center">
+  <img src="public/images/Carrer.png" height="300" alt="Carrer Page Screenshot"/>
+</div>
 
 ## Projects
+<div align="center">
+  <img src="public/images/Projects.png" height="300" alt="Projects Page Screenshot"/>
+</div>
 
 ## Music Player
+<div align="center">
+  <img src="public/images/Music-Player.png" height="300" alt="Music Player Page Screenshot"/>
+</div>
 
 ✨ Key Features:
 
@@ -35,4 +50,4 @@ Three.js – 3D rendering and animations
 
 GSAP – Advanced animations and timeline control
 
-🔗 [View Live Portfolio Demo](https://alexdreyesz.com)
+🔗 View Live Portfolio Demo: [https://alexdreyesz.com](https://alexdreyesz.com)
