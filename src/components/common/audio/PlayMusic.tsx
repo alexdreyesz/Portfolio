@@ -76,13 +76,17 @@ export default function PlayMusic() {
             audioRef.current.pause();
             audioRef.current.load();
             audioRef.current.volume = volumeRef.current;
-            audioRef.current.play().catch((err) => {
-                if (err.name !== "NotAllowedError") {
-                    console.error("Unexpected audio play error:", err);
-                }
-            });
+    
+            if (isPlaying) {
+                audioRef.current.play().catch((err) => {
+                    if (err.name !== "NotAllowedError") {
+                        console.error("Unexpected audio play error:", err);
+                    }
+                });
+            }
         }
-    }, [index]);
+    }, [index, isPlaying]);
+    
 
     useEffect(() => {
         if (audioRef.current) {
@@ -129,7 +133,7 @@ export default function PlayMusic() {
             <button className="button flex justify-center items-center align-middle gap-2" onClick={togglePlay}><img className="h-4" src={toggleIcon}/>Play</button>
 
             {hovered === 1 && (
-                <div className="absolute left-35 top-8 h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10" 
+                <div className="absolute left-35 top-8 h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10 max-sm:left-[-243px] max-sm:scale-[97.3%] max-sm:top-[187.2px]" 
                 onMouseEnter={() => {
                     if (timeoutRef.current) clearTimeout(timeoutRef.current);
                     setHovered(1);

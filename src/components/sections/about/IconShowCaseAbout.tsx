@@ -11,7 +11,7 @@ export default function IconShowCase( { CategoryName, CategoryObject, GSAPDirect
     const [hovered, setHovered] = useState<number | null>(null);
     
     return(
-        <div className={`w-250 h-fit flex-col mt-10 text-2xl text-white gsap-about-${GSAPDirection}`}>
+        <div className={`w-250 h-fit flex-col mt-10 text-2xl text-white gsap-about-${GSAPDirection} max-sm:w-auto max-sm:pl-6 max-sm:pr-6 max-sm:justify-self-start`}>
             <p>{CategoryName}:</p>
             <div className="flex flex-wrap flex-row pt-2 gap-2">
                 

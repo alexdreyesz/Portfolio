@@ -11,7 +11,7 @@ export default function GSAPScrollBehaviorAbout() {
                 xPercent: -100,
                 opacity: 0,
                 transformOrigin: "left",
-                duration: 1.5,
+                duration: 1.25,
                 ease: "power1.inOut",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
@@ -26,7 +26,7 @@ export default function GSAPScrollBehaviorAbout() {
                 xPercent: 100,
                 opacity: 0,
                 transformOrigin: "right",
-                duration: 1.5,
+                duration: 1.25,
                 ease: "power1.inOut",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
@@ -41,7 +41,7 @@ export default function GSAPScrollBehaviorAbout() {
                 yPercent: 50,
                 opacity: 0,
                 transformOrigin: "bottom",
-                duration: 1.5,
+                duration: 1.25,
                 ease: "power1.inOut",
                 scrollTrigger: {
                 trigger: text as HTMLElement,
@@ -56,7 +56,7 @@ export default function GSAPScrollBehaviorAbout() {
                 yPercent: -40,
                 opacity: 0,
                 transformOrigin: "Top",
-                duration: 1.5,
+                duration: 1.25,
                 ease: "power1.inOut",
                 scrollTrigger: {
                 trigger: text as HTMLElement,

@@ -22,6 +22,11 @@
     .animate-borderline:hover::after {
         width: 100%;
     }
+
+    .footer-background {
+        background-color: #04335d
+        ;
+    }
 }
 
 @layer components {

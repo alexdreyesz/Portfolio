@@ -8,14 +8,14 @@ export default function Projects() {
     GSAPScrollBehaviorProject();
     
     return (
-        <div id="projects" className="h-420 scroll-mt-12">
+        <div id="projects" className="h-420 scroll-mt-12 max-sm:h-fit max-sm:pb-25">
 
-            <div className="h-22 w-auto pb-30 flex-col justify-center text-center items-center content-center text-white gsap-projects-top">
+            <div className="h-22 w-auto pb-30 flex-col justify-center text-center items-center content-center text-white gsap-projects-top max-sm:pb-70">
                 <p className="text-4xl pb-5">Projects</p>
                 <p className="w-[80%] text-2xl/9 mx-auto text-center">Below are some of the most impactful projects that reflect the skills and experience I’ve developed throughout my journey.</p>
             </div>
 
-            <div className="flex justify-evenly">
+            <div className="flex justify-evenly max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <div className="pt-20 gsap-projects-left">
                     <ProjectCard
                         imgUrl={projects.contactHub.imgUrl}
@@ -56,7 +56,7 @@ export default function Projects() {
                 </div>
             </div>
 
-            <div className="flex justify-evenly">
+            <div className="flex justify-evenly max-sm:flex-col max-sm:justify-center max-sm:items-center">
                 <div className="pt-20 gsap-projects-left">
                     <ProjectCard
                         imgUrl={projects.codelaboration.imgUrl}

@@ -6,16 +6,24 @@ import Earth from "../../common/3d-models/Earth"
 function Home() {
     return (
         <section id="home" className="h-screen pt-12 relative overflow-hidden scroll-mt-12">
-            <Title/>
-            <div className="pb-8"></div>
-            <Sunny/>
-            <div className="h-100 w- 100 absolute left-260 bottom-45 z-1">
-                <Cherokee/>
+            <div className="absolute w-full flex justify-end max-sm:top-70">
+                <div className="h-100 w-100 relative left-135 bottom-10 z-[-1] max-sm:left-110">
+                    <Cherokee/>
+                </div>
+
+                <div className="h-100 w-100 relative left-50 bottom-25 z-[-2]">
+                    <Earth/>
+                </div>
             </div>
 
-            <div className="h-100 w- 100 absolute left-275 bottom-65 z-[-1]">
-                <Earth/>
+            <Title/>
+
+            <div className="h-full w-auto pb-8 flex justify-center items-center content-center">
+                <div className="h-full w-auto absolute top-50 max-sm:top-80">
+                    <Sunny/>
+                </div>
             </div>
+
         </section>
     )
 }
