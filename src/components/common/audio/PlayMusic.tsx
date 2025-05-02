@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from "react"
 import { songs } from "../../../constants/index"
 import Slider from "./slider/Slider"
-import playIcon from "../../../assets/icons/music/play.png"
-import pauseIcon from "../../../assets/icons/music/pause.png"
+import playIcon from "../../../assets/icons/music/pause.png"
+import pauseIcon from "../../../assets/icons/music/play.png"
 import nextSong from "../../../assets/icons/music/next-song.png"
 
 export default function PlayMusic() {
@@ -14,7 +14,7 @@ export default function PlayMusic() {
     const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     
     const [isPopupVisible, setIsPopupVisible] = useState(false);
-    const isMobile = () => window.innerWidth <= 640;
+    const isMobile = () => window.innerWidth <= 768; // sm: 640 md: 768
 
     function togglePlay() {
         if(isPlaying == false) {
@@ -141,7 +141,7 @@ export default function PlayMusic() {
             <button className="button flex justify-center items-center align-middle gap-2" onClick={() => { if (!isMobile()) togglePlay(); }}><img className="h-4" src={toggleIcon}/>Play</button>
 
             {isPopupVisible && (
-                <div className="absolute left-35 top-[31.8px] h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10 max-sm:left-[-205.4px] max-sm:scale-[97.6%] max-sm:top-[40.5px]" 
+                <div className="absolute left-35 top-[31.8px] h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10 max-sm:left-[25px] max-sm:-translate-x-1/2 max-sm:w-screen max-sm:top-[31px] max-sm:ml-auto max-sm:mr-auto" 
                     onClick={(e) => e.stopPropagation()}    
 
                     onMouseEnter={() => {

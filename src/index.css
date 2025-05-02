@@ -24,8 +24,7 @@
     }
 
     .footer-background {
-        background-color: #04335d
-        ;
+        background-color: #04335d;
     }
 }
 
@@ -100,7 +99,7 @@
 }
 
 .button:hover {
-    transform: scale(110%, 110%);
+    transform: scale(110%, 110%);  
 }
 
 :root {
@@ -133,7 +132,23 @@ p {
 }
 
 /* Smooth All Transitions Globally */
-* {
+a:hover {  
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+img {
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.interactive-animation:hover {
+    transform: scale(105%, 105%);  
     transition: all 0.2s ease-in-out;
     box-sizing: border-box;
 }

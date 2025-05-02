@@ -10,9 +10,9 @@ export default function GSAPScrollBehaviorProject() {
             gsap.from(card as HTMLElement, {
                 xPercent: -100,
                 opacity: 0,
-                transformOrigin: "left",
-                duration: 1.25,
-                ease: "power1.inOut",
+                transformOrigin: "left left",
+                duration: 1.75,
+                ease: "power1.out",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
                     start: "top 70%",
@@ -25,9 +25,9 @@ export default function GSAPScrollBehaviorProject() {
             gsap.from(card as HTMLElement, {
                 xPercent: 100,
                 opacity: 0,
-                transformOrigin: "right",
-                duration: 1.25,
-                ease: "power1.inOut",
+                transformOrigin: "rightright",
+                duration: 1.75,
+                ease: "power1.out",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
                     start: "top 70%",
@@ -40,12 +40,12 @@ export default function GSAPScrollBehaviorProject() {
             gsap.from(text as HTMLElement, {
                 yPercent: 50,
                 opacity: 0,
-                transformOrigin: "bottom",
-                duration: 1.25,
-                ease: "power1.inOut",
+                transformOrigin: "bottom bottom",
+                duration: 1.75,
+                ease: "power1.out",
                 scrollTrigger: {
                 trigger: text as HTMLElement,
-                start: "top 90%",
+                start: "top 110%",
                 toggleActions: "play none none reverse",
                 }
             });

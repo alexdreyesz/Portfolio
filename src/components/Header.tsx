@@ -18,22 +18,22 @@ function Header() {
 
             
             <nav className="relative right-8 flex space-x-18 max-sm:hidden">
-                <a className="cursor-pointer" href="#home"><p className="hover:scale-110">Home</p></a>
-                <a className="cursor-pointer" href="#about"><p className="hover:scale-110">About</p></a>
-                <a className="cursor-pointer" href="#career"><p className="hover:scale-110">Career</p></a>
-                <a className="cursor-pointer" href="#projects"><p className="hover:scale-110">Projects</p></a>
+                <a className="cursor-pointer interactive-animation" href="#home"><p className="hover:scale-110">Home</p></a>
+                <a className="cursor-pointer interactive-animation" href="#about"><p className="hover:scale-110">About</p></a>
+                <a className="cursor-pointer interactive-animation" href="#career"><p className="hover:scale-110">Career</p></a>
+                <a className="cursor-pointer interactive-animation" href="#projects"><p className="hover:scale-110">Projects</p></a>
                 <PlayMusic/>
             </nav>
 
-            <div className="md:hidden relative right-6 flex">
-                <div className="py-3 pr-33 "><PlayMusic /></div>
-                
+            <div className="md:hidden relative right-3"><PlayMusic /></div>
+
+            <div className="md:hidden relative right-6 flex">            
                 <button onClick={() => setIsOpen(!isOpen)} className="text-xl font-bold focus:outline-none">
                 ☰
                 </button>
 
                 {isOpen && (
-                <div className="absolute right-[-24px] top-[39.3px] mt-2 w-48 bg-blue-100/70 shadow-md z-50">
+                <div className="absolute right-[-24px] top-[29px] mt-2 w-48 bg-blue-100/70 shadow-md z-49">
                     <div className="w-full h-full z-[-1] absolute right-[0px] top-[-1px] backdrop-blur-md bg-white/0"></div>
                     <a href="#home" className="block px-4 py-2 hover:bg-gray-100">Home</a>
                     <a href="#about" className="block px-4 py-2 hover:bg-gray-100">About</a>

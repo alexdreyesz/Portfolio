@@ -10,12 +10,12 @@ export default function GSAPScrollBehaviorCareer() {
             gsap.from(card as HTMLElement, {
                 xPercent: -100,
                 opacity: 0,
-                transformOrigin: "left",
-                duration: 1.25,
-                ease: "power1.inOut",
+                transformOrigin: "left left",
+                duration: 1.75,
+                ease: "power1.out",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
-                    start: "top 100%",
+                    start: "top 65%",
                     toggleActions: "play none none reverse",
                 }
             });
@@ -25,12 +25,12 @@ export default function GSAPScrollBehaviorCareer() {
             gsap.from(card as HTMLElement, {
                 xPercent: 100,
                 opacity: 0,
-                transformOrigin: "right",
-                duration: 1.25,
-                ease: "power1.inOut",
+                transformOrigin: "right right",
+                duration: 1.75,
+                ease: "power1.out",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
-                    start: "top 100%",
+                    start: "top 65%",
                     toggleActions: "play none none reverse",
                 }
             });
@@ -40,12 +40,12 @@ export default function GSAPScrollBehaviorCareer() {
             gsap.from(text as HTMLElement, {
                 yPercent: 50,
                 opacity: 0,
-                transformOrigin: "bottom",
-                duration: 1.25,
-                ease: "power1.inOut",
+                transformOrigin: "bottom bottom",
+                duration: 1.75,
+                ease: "power1.out",
                 scrollTrigger: {
                 trigger: text as HTMLElement,
-                start: "top 120%",
+                start: "top 100%",
                 toggleActions: "play none none reverse",
                 }
             });

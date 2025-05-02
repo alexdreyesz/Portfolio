@@ -9,8 +9,8 @@ import CanvasBackground from "./components/common/background/CanvasBackground";
 
 function App() {
   return (
-    <div>
-      <CanvasBackground/>
+    <div className="bg-black">
+      {/*<CanvasBackground/>*/}
       <Header/>
       <main className="overflow-hidden">
         <Home/>
