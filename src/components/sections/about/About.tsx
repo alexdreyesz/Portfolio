@@ -14,13 +14,15 @@ export default function About() {
         <div id="about" className="h-500 mt-20 flex-col justify-items-center scroll-mt-12 max-sm:h-fit max-sm:mb-15">
             
             <div className="w-full flex justify-evenly mt-10 mb-10 max-sm:flex-col max-sm:justify-center max-sm:items-center">
+               
                 <div className="relative h-120 w-auto overflow-hidden rounded-lg gsap-about-left max-sm:h-fit max-sm:w-auto max-sm:mb-20">
-                    <img src={portraitFormal} className="w-full h-full object-fill relative rounded-lg max-sm:h-[100%] max-sm:w-auto"/>
+                    <img src={portraitFormal} className="w-full h-full object-fill relative rounded-lg max-sm:h-[55vh] max-sm:w-auto"/>
                 </div>
 
                 <div className="relative h-120 w-auto overflow-hidden rounded-lg gsap-about-right max-sm:h-fit">
-                    <img src={family} className="w-full h-full object-fill relative rounded-lg max-sm:h-[100%] max-sm:w-auto"/>
+                    <img src={family} className="w-full h-full object-fill relative rounded-lg max-sm:h-[30.5vh] max-sm:w-auto"/>
                 </div>
+
             </div>
 
             <div className="w-250 h-fit mt-13 text-2xl text-white gsap-about-top max-sm:w-auto">

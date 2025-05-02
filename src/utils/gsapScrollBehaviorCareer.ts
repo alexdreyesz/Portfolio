@@ -12,7 +12,7 @@ export default function GSAPScrollBehaviorCareer() {
                 opacity: 0,
                 transformOrigin: "left left",
                 duration: 1.75,
-                ease: "power1.out",
+                ease: "power2.out",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
                     start: "top 65%",
@@ -27,7 +27,7 @@ export default function GSAPScrollBehaviorCareer() {
                 opacity: 0,
                 transformOrigin: "right right",
                 duration: 1.75,
-                ease: "power1.out",
+                ease: "power2.out",
                 scrollTrigger: {
                     trigger: card as HTMLElement,
                     start: "top 65%",
