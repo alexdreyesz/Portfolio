@@ -1,7 +1,17 @@
-# React + TypeScript + Vite
+# Welcome To My Portfolio! Made With React + Tailwind + Three.js + GSAP + TypeScript + Node.js + Vite
 
 🌐 My Developer Portfolio
-This is my personal portfolio website built with React, Tailwind CSS, Three.js, and GSAP. It showcases my projects, skills, and experience through an interactive and dynamic user experience.
+This is my personal portfolio website. It showcases my projects, skills, and experience through an interactive and dynamic user experience. If you are coming from my portfolio welcome to inception 🤑 if you are not ignore this 😭.
+
+## Home
+
+## About
+
+## Carrer
+
+## Projects
+
+## Music Player
 
 ✨ Key Features:
 
@@ -25,4 +35,4 @@ Three.js – 3D rendering and animations
 
 GSAP – Advanced animations and timeline control
 
-🔗 [View Live Portfolio Demo](https://alexdreyesz.github.io/Portfolio/)
+🔗 [View Live Portfolio Demo](https://alexdreyesz.com)
