@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from '../assets/icons/logo/kingz.png'
 import PlayMusic from './common/audio/PlayMusic'
 
@@ -25,21 +25,20 @@ function Header() {
                 <PlayMusic/>
             </nav>
 
-            <div className="md:hidden relative right-6">
+            <div className="md:hidden relative right-6 flex">
+                <div className="py-3 pr-33 "><PlayMusic /></div>
+                
                 <button onClick={() => setIsOpen(!isOpen)} className="text-xl font-bold focus:outline-none">
                 ☰
                 </button>
 
                 {isOpen && (
-                <div className="absolute right-[-24px] top-[30px] mt-2 w-48 bg-blue-100/70 shadow-md z-50">
-
+                <div className="absolute right-[-24px] top-[39.3px] mt-2 w-48 bg-blue-100/70 shadow-md z-50">
                     <div className="w-full h-full z-[-1] absolute right-[0px] top-[-1px] backdrop-blur-md bg-white/0"></div>
-
                     <a href="#home" className="block px-4 py-2 hover:bg-gray-100">Home</a>
                     <a href="#about" className="block px-4 py-2 hover:bg-gray-100">About</a>
                     <a href="#career" className="block px-4 py-2 hover:bg-gray-100">Career</a>
                     <a href="#projects" className="block px-4 py-2 hover:bg-gray-100">Projects</a>
-                    <div className="px-4 py-2"><PlayMusic /></div>
                 </div>
                 )}
             </div>

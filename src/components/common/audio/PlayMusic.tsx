@@ -138,10 +138,10 @@ export default function PlayMusic() {
             }}
         >
             <audio key={index} ref={audioRef} src={songs[index].songUrl} loop={true}/>
-            <button className="button flex justify-center items-center align-middle gap-2" onClick={togglePlay}><img className="h-4" src={toggleIcon}/>Play</button>
+            <button className="button flex justify-center items-center align-middle gap-2" onClick={() => { if (!isMobile()) togglePlay(); }}><img className="h-4" src={toggleIcon}/>Play</button>
 
             {isPopupVisible && (
-                <div className="absolute left-35 top-[31.8px] h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10 max-sm:left-[-243px] max-sm:scale-[97.3%] max-sm:top-[187.2px]" 
+                <div className="absolute left-35 top-[31.8px] h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10 max-sm:left-[-205.4px] max-sm:scale-[97.6%] max-sm:top-[40.5px]" 
                     onClick={(e) => e.stopPropagation()}    
 
                     onMouseEnter={() => {
