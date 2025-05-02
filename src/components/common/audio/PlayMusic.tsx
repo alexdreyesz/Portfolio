@@ -9,10 +9,12 @@ export default function PlayMusic() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [toggleIcon, setToggleIcon] = useState(pauseIcon);
     const audioRef = useRef<HTMLAudioElement>(null);
-    const [hovered, setHovered] = useState<number | null>(null);
     const [index, setIndex] = useState<number>(0);
     const [volume, setVolume] = useState(0.5); 
     const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+    const isMobile = () => window.innerWidth <= 640;
 
     function togglePlay() {
         if(isPlaying == false) {
@@ -120,27 +122,38 @@ export default function PlayMusic() {
 
     return (
         <div 
-        onMouseEnter={() => {
-            if (timeoutRef.current) clearTimeout(timeoutRef.current);
-            setHovered(1);
-        }}
+            onMouseEnter={() => {
+                if (timeoutRef.current) clearTimeout(timeoutRef.current);
+                if (!isMobile()) setIsPopupVisible(true);
+            }}
 
-        onMouseLeave={() => {
-            timeoutRef.current = setTimeout(() => setHovered(null), 300);
-        }}
+            onMouseLeave={() => {
+                timeoutRef.current = setTimeout(() => {
+                    if (!isMobile()) setIsPopupVisible(false);
+                }, 300);
+            }}
+
+            onClick={() => {
+                if (isMobile()) setIsPopupVisible((prev) => !prev);
+            }}
         >
             <audio key={index} ref={audioRef} src={songs[index].songUrl} loop={true}/>
             <button className="button flex justify-center items-center align-middle gap-2" onClick={togglePlay}><img className="h-4" src={toggleIcon}/>Play</button>
 
-            {hovered === 1 && (
-                <div className="absolute left-35 top-8 h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10 max-sm:left-[-243px] max-sm:scale-[97.3%] max-sm:top-[187.2px]" 
-                onMouseEnter={() => {
-                    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-                    setHovered(1);
-                }}
+            {isPopupVisible && (
+                <div className="absolute left-35 top-[31.8px] h-70 w-110 border-1 border-gray-800 mt-1 px-2 py-1 rounded-lg backdrop-blur-md bg-white/0 text-white text-sm z-10 max-sm:left-[-243px] max-sm:scale-[97.3%] max-sm:top-[187.2px]" 
+                    onClick={(e) => e.stopPropagation()}    
+
+                    onMouseEnter={() => {
+                        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+                        if (!isMobile()) setIsPopupVisible(true);
+                    }}
+
                     onMouseLeave={() => {
-                    timeoutRef.current = setTimeout(() => setHovered(null), 300);
-                }}
+                        timeoutRef.current = setTimeout(() => {
+                            if (!isMobile()) setIsPopupVisible(false);
+                        }, 300);
+                    }}
                 >
                     
                     <div className="h-[70%] relative bottom-1 flex content-center items-center g-amber-300">

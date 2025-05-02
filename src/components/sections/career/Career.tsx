@@ -76,7 +76,7 @@ export default function Career() {
                 </div>
 
       
-                <div className="ml-auto mr-40 max-sm:pt-30 max-sm:pb-30 max-sm:relative max-sm:left-15">
+                <div className="ml-auto mr-35 max-sm:pt-30 max-sm:pb-30 max-sm:relative max-sm:left-15">
                     <StarCompass
                         badge3DURL="models/badges/star-compass-compressed.glb"
                         positionXYZ={{ x: 0, y: 0, z: 1 }}
