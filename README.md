@@ -13,9 +13,9 @@ This is my personal portfolio website. It showcases my projects, skills, and exp
   <img src="public/images/About.png" height="300" alt="About Page Screenshot"/>
 </div>
 
-## Carrer
+## Career
 <div align="center">
-  <img src="public/images/Carrer.png" height="300" alt="Carrer Page Screenshot"/>
+  <img src="public/images/Career.png" height="300" alt="Carrer Page Screenshot"/>
 </div>
 
 ## Projects
@@ -27,8 +27,10 @@ This is my personal portfolio website. It showcases my projects, skills, and exp
 <div align="center">
   <img src="public/images/Music-Player.png" height="300" alt="Music Player Page Screenshot"/>
 </div>
+<br>
+<br>
 
-✨ Key Features:
+✨ **Key Features:**
 
 Responsive design for all devices
 
@@ -40,7 +42,10 @@ Modern UI/UX with Tailwind CSS
 
 Project gallery, skill badges, and interactive sections
 
-🚀 Technologies Used:
+<br>
+<br>
+
+🚀 **Technologies Used:**
 
 React – Front-end framework
 
@@ -49,5 +54,8 @@ Tailwind CSS – Utility-first styling
 Three.js – 3D rendering and animations
 
 GSAP – Advanced animations and timeline control
+
+<br>
+<br>
 
 🔗 View Live Portfolio Demo: [https://alexdreyesz.com](https://alexdreyesz.com)
