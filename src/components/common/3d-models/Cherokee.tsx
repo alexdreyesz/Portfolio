@@ -1,4 +1,3 @@
-import { getAssetPath } from '../../../utils/getAssetPath';
 import { useRef } from 'react';
 
 import * as THREE from 'three';
@@ -14,8 +13,8 @@ dracoLoader.setDecoderPath('/draco/');
 (GLTFLoader.prototype as unknown as { setDRACOLoader: (loader: DRACOLoader) => void }).setDRACOLoader(dracoLoader);
 
 function Model() {
-    useGLTF.preload(getAssetPath('/models/extra/cherokee-compressed.glb'));
-    const { scene } = useGLTF(getAssetPath('/models/extra/cherokee-compressed.glb'));
+    useGLTF.preload('/models/extra/cherokee-compressed.glb');
+    const { scene } = useGLTF('/models/extra/cherokee-compressed.glb');
     
     const ref = useRef<THREE.Object3D>(null!);
 

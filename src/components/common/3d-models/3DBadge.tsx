@@ -1,4 +1,3 @@
-import { getAssetPath } from '../../../utils/getAssetPath'
 import { useRef } from 'react';
 
 import * as THREE from 'three';
@@ -23,8 +22,8 @@ interface BadgeIconsProps {
 export default function BadgeIcon({badge3DURL, positionXYZ, rotationXYZ, animationXYZ}: BadgeIconsProps) {
 
     function Model({badge3DURL, positionXYZ, rotationXYZ, animationXYZ}: BadgeIconsProps) {
-        useGLTF.preload(getAssetPath(badge3DURL));
-        const badge = useGLTF(getAssetPath(badge3DURL));
+        useGLTF.preload(badge3DURL);
+        const badge = useGLTF(badge3DURL);
         const ref = useRef<THREE.Object3D>(null!);
     
         const time = useRef(0);

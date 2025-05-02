@@ -32,7 +32,7 @@ export default function Career() {
                 
                 <div className="ml-auto mr-40 max-sm:pt-30  max-sm:pb-30">
                     <MasterSword
-                        badge3DURL="models/badges/master-sword-compressed.glb"
+                        badge3DURL="/models/badges/master-sword-compressed.glb"
                         positionXYZ={{ x: 0, y: 0, z: -1 }}
                         rotationXYZ={{ x: 1.4, y: -0.5, z: 0 }}
                         animationXYZ={{x: 0.00, y: 0.002, z: 0.005}}
@@ -43,7 +43,7 @@ export default function Career() {
             <div className="pt-20 pr-20 flex justify-end gsap-career-card-right max-sm:flex-col max-sm:justify-center max-sm:align-center max-sm:items-center">
                 <div className="ml-30 mr-auto max-sm:order-1 max-sm:pt-30 max-sm:pb-15 max-sm:ml-20 max-sm:relative max-sm:right-3 max-sm:bottom-8">
                     <Digivice
-                        badge3DURL="models/badges/digimon-digivice-compressed.glb"
+                        badge3DURL="/models/badges/digimon-digivice-compressed.glb"
                         positionXYZ={{ x: 0, y: 0, z: -430 }}
                         rotationXYZ={{ x: 0, y: 9.5, z: -0.005 }}
                         animationXYZ={{x: 0, y: 0.004, z: 0}}
@@ -78,7 +78,7 @@ export default function Career() {
       
                 <div className="ml-auto mr-35 max-sm:pt-30 max-sm:pb-30 max-sm:relative max-sm:left-15">
                     <StarCompass
-                        badge3DURL="models/badges/star-compass-compressed.glb"
+                        badge3DURL="/models/badges/star-compass-compressed.glb"
                         positionXYZ={{ x: 0, y: 0, z: 1 }}
                         rotationXYZ={{ x: 0, y: 0, z: 0 }}
                         animationXYZ={{x: 0.003, y: 0.002, z: 0.001}}
@@ -89,7 +89,7 @@ export default function Career() {
             <div className="pt-20 pr-20 flex justify-end gsap-career-card-right max-sm:flex-col max-sm:justify-center max-sm:align-center max-sm:items-center">
                 <div className="ml-30 mr-auto max-sm:order-1 max-sm:pt-30 max-sm:pb-15 max-sm:ml-20 max-sm:relative max-sm:right-4">
                     <GomuGomuNoMi
-                        badge3DURL="models/badges/gomu-gomu-no-mi-compressed.glb"
+                        badge3DURL="/models/badges/gomu-gomu-no-mi-compressed.glb"
                         positionXYZ={{ x: 0, y: -25, z: -240 }}
                         rotationXYZ={{ x: 0, y: 1, z: 0 }}
                         animationXYZ={{x: 0, y: 0.004, z: 0}}

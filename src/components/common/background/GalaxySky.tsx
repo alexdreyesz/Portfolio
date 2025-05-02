@@ -1,4 +1,3 @@
-import { getAssetPath } from '../../../utils/getAssetPath'
 import { useRef } from "react";
 
 import * as THREE from "three";
@@ -13,8 +12,8 @@ dracoLoader.setDecoderPath('/draco/');
 (GLTFLoader.prototype as unknown as { setDRACOLoader: (loader: DRACOLoader) => void }).setDRACOLoader(dracoLoader);
 
 export default function BackgroundSphere() {
-  useGLTF.preload(getAssetPath('/models/backgrounds/galaxy-sphere.glb'));
-  const { scene } = useGLTF(getAssetPath("/models/backgrounds/galaxy-sphere.glb"));
+  useGLTF.preload('/models/backgrounds/galaxy-sphere.glb');
+  const { scene } = useGLTF("/models/backgrounds/galaxy-sphere.glb");
   const ref = useRef<THREE.Object3D>(null!);;
 
   useFrame(() => {
