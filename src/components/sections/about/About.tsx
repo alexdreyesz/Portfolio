@@ -30,7 +30,7 @@ export default function About() {
                 <div className="w-full h-8 mb-5 items-center justify-center text-center overflow-hidden max-sm:overflow-visible max-sm:h-fit max-sm:pb-5">
                     <div className="flex justify-center relative bottom-[5px] font-bold text-3xl text-white max-sm:flex-col max-sm:items-center">
                         
-                        <div className="h-fit w-fit max-sm:pb-5">Welcome To My Potfolio! &nbsp;</div>
+                        <div className="h-fit w-fit max-sm:pb-5">Welcome To My Portfolio! &nbsp;</div>
 
                         <div className="h-8 w-auto max-sm:overflow-hidden">
                             Made With &nbsp;
